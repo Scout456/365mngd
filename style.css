@@ -455,6 +455,7 @@ padding: .3em;
 #blogNews{
   grid-area: bn;
   color: white;
+  padding: .5em;
   background-color:#002764;
   width: 90%;
   margin-left: auto;
@@ -466,13 +467,7 @@ padding: .3em;
 
 }
 
-.fa-blog{
-  font-size: 3vw;
-  position: absolute;
-  left: 1em;
-  top: 1.5em;
 
-  }
 
   
 
