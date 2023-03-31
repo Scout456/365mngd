@@ -349,15 +349,17 @@ padding: .3em;
   grid-area: aab;
   background-color: #EDF7FF;
   width: 90%;
-  font-size: 8vw;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  font-size: 5vw;
   padding: .5em;
   color: #002764;
   border: 4px ridge #0071AD ;
   
 }
+
+
 
 
 #services{
@@ -706,20 +708,20 @@ footer{
 
 #pTagFootMain{
   padding: .5em;
-  font-size:5vw;
+  font-size:4vw;
   line-height: 1.2em;
   text-align: start;
 }
 
 #listOneFooter{
   padding: .5em;
-  font-size:6vw;
+  font-size:4vw;
   line-height: 1.2em;
   text-align: start;
 }
 
 #h3Pages, #h3Az, #h3Nv{
-  font-size: 8vw;
+  font-size: 6vw;
   padding: .5em 0 .5em 0;
 }
 
@@ -727,7 +729,7 @@ footer{
   margin: .3em 0 .3em .7em;
   padding: .5em;
   width: 90%;
-  font-size:6vw;
+  font-size:4vw;
   line-height: 1.2em;
   text-align: start;
   border-radius: 10px;
@@ -739,7 +741,7 @@ footer{
   margin: .3em 0 .3em .7em;
   padding: .5em;
   width: 90%;
-  font-size:6vw;
+  font-size:5vw;
   line-height: 1.2em;
   text-align: start;
   border-radius: 10px;
@@ -755,7 +757,7 @@ margin: .3em 0 .3em 0;
 #btnContact{
   cursor: pointer;
   border: none;
-  font-size: 6vw;
+  font-size: 4vw;
   border-radius: 10px;
   box-shadow: 2px 2px 5px rgba(0,0,0,0.5),
             10px 10px 15px rgba(0,0,0,0.5),
