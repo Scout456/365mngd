@@ -450,6 +450,8 @@ padding: .3em;
   cursor: pointer;
 }
 
+
+
 #blogNews{
   grid-area: bn;
   color: white;
@@ -458,22 +460,30 @@ padding: .3em;
   margin-left: auto;
   margin-right: auto;
   border: 4px ridge #0071AD;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
+  position: relative;
+  
 
 }
 
 .fa-blog{
-  font-size: 4vw;
+  font-size: 3vw;
+  position: absolute;
+  left: 1em;
+  top: 1.5em;
+
+  }
+
   
-}
+
+
+
+  
 
 #blogNewsPtag{
   font-size: 6vw;
   padding: .5em;
-  text-align: center;
+
   
 }
 
