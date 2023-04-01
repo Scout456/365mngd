@@ -503,13 +503,13 @@ padding: .3em;
   position: absolute;
   top: 5em;
   padding: .4em;
-  font-size: 4vw;
+  font-size: 3.5vw;
   line-height: 1.3em;
   font-weight: 600;
 }
 
 #clipBoardBtn{
-  margin-top: 1em;
+  margin-top: .5em;
   border: none;
   border-radius: 15px 15px;
   border:1px solid #0071AD;
@@ -555,14 +555,13 @@ padding: .3em;
   position: absolute;
   top: 4em;
   padding: .4em;
-  font-size: 4vw;
+  font-size: 3.5vw;
   line-height: 1.3em;
   font-weight: 600;
   }
 
  #googleWorkspaceBtn{
-  margin-top: 1em;
-  border: none;
+  margin-top: .5em;
   border-radius: 15px 15px;
   border:1px solid #0071AD;
   font-size: 3vw;
@@ -597,13 +596,13 @@ padding: .3em;
   position: absolute;
   top: 4em;
   padding: .4em;
-  font-size: 4vw;
+  font-size: 3.5vw;
   line-height: 1.3em;
   font-weight: 600;
   }
 
  #hacksBtn{
-  margin-top: 2em;
+  margin-top: 1em;
   border: none;
   border-radius: 15px 15px;
   border:1px solid #0071AD;
