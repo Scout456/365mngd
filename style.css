@@ -538,8 +538,8 @@ padding: .3em;
 }
 
 #googleWorkspacePic{
-  filter: brightness(200%);
-  filter: contrast(50%);
+  filter: brightness(150%);
+  filter: contrast(30%);
 }
 
  #h2googleWorkspace{
