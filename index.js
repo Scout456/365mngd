@@ -3,7 +3,7 @@ const theOptions = {
 
   root:null, 
 
-  threshold:0.2, 
+  threshold:0.4, 
 
   rootMargin:"0px 0px 0px 0px"
 
