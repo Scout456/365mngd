@@ -65,7 +65,7 @@ function get_add(){
  }
  if ( (email_add.indexOf("@") != -1) && (email_add.indexOf(".") != -1) )
  {
-    alert("Thanks!");
+    alert("Thank you!");
  }
 }
 
