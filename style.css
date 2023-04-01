@@ -469,12 +469,6 @@ padding: .3em;
 
 
 
-  
-
-
-
-  
-
 #blogNewsPtag{
   font-size: 6vw;
   padding: .5em;
@@ -507,9 +501,9 @@ padding: .3em;
 
 #pTagClipboard{
   position: absolute;
-  top: 5em;
+  top: 4em;
   padding: .4em;
-  font-size: 3vw;
+  font-size: 4vw;
   line-height: 1.3em;
   font-weight: 600;
 }
@@ -559,19 +553,19 @@ padding: .3em;
 
  #pTaggoogleWorkspace{
   position: absolute;
-  top: 5em;
+  top: 3.5em;
   padding: .4em;
-  font-size: 3vw;
+  font-size: 4vw;
   line-height: 1.3em;
   font-weight: 600;
   }
 
  #googleWorkspaceBtn{
-  margin-top: 2em;
+  margin-top: 1em;
   border: none;
   border-radius: 15px 15px;
   border:1px solid #0071AD;
-  font-size: 2vw;
+  font-size: 3vw;
   cursor: pointer;
 }
 
@@ -603,7 +597,7 @@ padding: .3em;
   position: absolute;
   top: 4em;
   padding: .4em;
-  font-size: 3vw;
+  font-size: 4vw;
   line-height: 1.3em;
   font-weight: 600;
   }
@@ -613,7 +607,7 @@ padding: .3em;
   border: none;
   border-radius: 15px 15px;
   border:1px solid #0071AD;
-  font-size: 2vw;
+  font-size: 3vw;
   cursor: pointer;
 }
 
