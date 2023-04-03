@@ -84,6 +84,7 @@ table {
   #pTagContact{
    text-align: start;
    font-size: 4vw;
+   line-height: 1.2em;
    padding: 1em;
   }
 
@@ -108,10 +109,12 @@ table {
     }
 
     #azList{
+      line-height: 1.1em;
       font-size: 4vw;  
     }
 
     #nvList{
+      line-height: 1.1em;
       font-size: 4vw;
       padding: 0 0 1em 0;
     }
