@@ -801,7 +801,7 @@ margin: .3em 0 .3em 0;
 .spin { 
   opacity: 0; 
   transition-property: transform, opacity; 
-  transition-duration: .5s; 
+  transition-duration: 1.2s; 
   transition-timing-function: ease-in; 
   transform: rotate(360deg);
 

@@ -1,0 +1,293 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*-----------------------End of CSS reset----------------------------------------------*/
+
+
+
+
+  #mainContact{
+  background-image: url("images/groupWork.webp");
+  background-position:left;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-color: rgb(84, 83, 83);
+  background-blend-mode: multiply;
+  color: white;
+  }
+
+  
+ #h1PtagAzNv{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   
+   
+  }
+
+  #h1Contact{
+    font-size: 8vw;
+    color:#b4d8ec ;
+    padding: .5em;
+  }
+
+  #pTagContact{
+   text-align: start;
+   font-size: 4vw;
+   padding: 1em;
+  }
+
+  #h1PtagContact, #azMainList, #nvMainList{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    }
+
+    #h3azContact{
+      font-size: 7vw;
+      padding: .5em 0 .5em 0;
+      
+    }
+
+    #h3nvContact{
+      font-size: 7vw;
+      padding: .5em 0 .5em 0;
+    
+    }
+
+    #azList{
+      font-size: 4vw;  
+    }
+
+    #nvList{
+      font-size: 4vw;
+      padding: 0 0 1em 0;
+    }
+
+  #mainFormMap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    }
+
+  #formContact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+  }
+
+  .iconForms{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+
+  input, textarea{
+    font-size: 4vw;
+    padding: .3em;
+    margin: .2em;
+    
+    }
+
+  #azMap,#nvMap{
+    border-radius: 10px;
+    
+  }
+
+
+
+
+  /*---------------------------------------------Media queries---------------------------------*/
+
+
+@media screen and (min-width: 768px){
+
+ 
+  body{
+  background-image: url("images/groupWork.webp");
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size:cover;
+   background-color: rgb(84, 83, 83);
+  background-blend-mode: multiply;
+  color: white;
+  
+  }
+
+
+
+ #h1PtagAzNv{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   align-items: center;
+   
+  }
+
+    #h1Contact{
+    font-size: 5vw;
+    color:#b4d8ec ;
+    padding: .5em;
+  }
+
+  #pTagContact{
+   text-align: start;
+   font-size: 2vw;
+   line-height: 1.2em;
+   padding: 1em;
+  }
+
+   #h3azContact{
+      font-size: 4vw;
+      }
+
+    #h3nvContact{
+      font-size: 4vw;
+      padding: .5em 0 0 0;
+      
+    
+    }
+
+    #azList{
+      font-size: 2vw;  
+      line-height: 1.2em;
+      text-align: center;
+      
+    }
+
+    #nvList{
+      font-size: 2vw;
+      line-height: 1.2em;
+      text-align: center;
+      padding: .5em 0 0 0;
+    }
+
+
+
+  #h1PtagContact, #azMainList, #nvMainList{
+    display: flex;
+    flex-direction: column;
+     width: 70%;
+  }
+
+  #mainFormMap{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: start;
+  
+     }
+
+  #formContact{
+    display: flex;
+    flex-direction: column;
+    
+    
+    
+  }
+
+  .iconForms{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+
+  input{
+    font-size: 2vw;
+    padding: .2em; 
+    margin: .1em;
+    width: 80%;
+  }
+
+  textarea{
+    font-size: 2vw;
+    padding: .2em;
+    margin: .2em 1.8em 0 0;
+    height: 20vh;
+    width: 80%;
+  }
+
+  #subClear-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    padding: 0 2em 1em 0;
+    
+  }
+
+
+  #azMap,#nvMap{
+    border-radius: 10px;
+    width: 95%;
+ }
+
+
+}
+
+
+
+ 
+
+
+
+
+
+
