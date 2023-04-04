@@ -1086,6 +1086,26 @@ ul{
   
 }
 
+  @keyframes colorChange{
+     0% {color: white; }
+     10% {color: #308BBB;}
+     20% {color:#002E6A;}
+     30% {color: #C0821D;}
+     40% {color:white;}
+     50% {color: #308BBB;}
+     60% {color:#002E6A;}
+     70% {color: #C0821D;}
+     80% {color:white;}
+     90% {color: #308BBB;}
+     100% {color:#002E6A;}
+  }
+
+#contactKeyFrames{
+  animation-name: colorChange;
+  animation-duration: 5s;
+  animation-iteration-count: 10;
+}
+
 
 
 
