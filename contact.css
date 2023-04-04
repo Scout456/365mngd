@@ -312,7 +312,7 @@ table {
   #mainFormMap{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: start;
   
      }
@@ -321,9 +321,7 @@ table {
     display: flex;
     flex-direction: column;
     
-    
-    
-  }
+    }
 
   .iconForms{
     display: flex;
@@ -332,16 +330,16 @@ table {
     }
 
   input{
-    font-size: 2vw;
+    font-size: 1.5vw;
     padding: .2em; 
     margin: .1em;
-    width: 80%;
+  
   }
 
   textarea{
-    font-size: 2vw;
+    font-size: 1.5vw;
     padding: .2em;
-    margin: .2em 1.8em 0 0;
+    margin: .2em 1em 0 0;
     height: 20vh;
     width: 80%;
   }
