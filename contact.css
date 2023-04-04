@@ -72,13 +72,29 @@ table {
    justify-content: center;
    align-items: center;
    
-   
+  }
+
+  @keyframes colorChange{
+     0% {color: white; }
+     10% {color: #308BBB;}
+     20% {color:white;}
+     30% {color: #C0821D;}
+     40% {color:white;}
+     50% {color: #308BBB;}
+     60% {color: white;}
+     70% {color: #C0821D;}
+     80% {color:white;}
+     90% {color: #308BBB;}
+     100% {color: white;}
   }
 
   #h1Contact{
     font-size: 8vw;
     color:#b4d8ec ;
     padding: .5em;
+    animation-name: colorChange;
+    animation-duration: 10s;
+    animation-iteration-count: 5;
   }
 
   #pTagContact{
@@ -88,13 +104,34 @@ table {
    padding: 1em;
   }
 
-  #h1PtagContact, #azMainList, #nvMainList{
+  #h1PtagContact{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
+ }
 
-    }
+ #azMainList{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: .3em;
+  margin: 0 0 .3em 0;
+ }
+
+ #nvMainList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  padding: .3em;
+  margin: 0 0 .3em 0;
+ }
+
+
 
     #h3azContact{
       font-size: 7vw;
@@ -143,14 +180,33 @@ table {
     }
 
   input, textarea{
-    font-size: 4vw;
+    font-size: 3.5vw;
     padding: .3em;
     margin: .2em;
-    
     }
+
+  input:focus, textarea:focus{
+    background-color:lightblue;
+}
+
+  input:hover, textarea:hover{
+   border: 4px solid #0071AC;
+}
+   
+  #subClear-form{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
 
   #azMap,#nvMap{
     border-radius: 10px;
+    padding: .5em;
+
+    
+    
+
     
   }
 
@@ -185,7 +241,7 @@ table {
   }
 
     #h1Contact{
-    font-size: 5vw;
+    font-size: 6vw;
     color:#b4d8ec ;
     padding: .5em;
   }
@@ -203,7 +259,7 @@ table {
 
     #h3nvContact{
       font-size: 4vw;
-      padding: .5em 0 0 0;
+      
       
     
     }
@@ -219,16 +275,39 @@ table {
       font-size: 2vw;
       line-height: 1.2em;
       text-align: center;
-      padding: .5em 0 0 0;
+    
     }
 
 
 
-  #h1PtagContact, #azMainList, #nvMainList{
+  #h1PtagContact{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
      width: 70%;
   }
+
+  
+ #azMainList{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+
+  
+ }
+
+ #nvMainList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  width: 70%;
+  padding: .3em;
+
+ }
 
   #mainFormMap{
     display: flex;
