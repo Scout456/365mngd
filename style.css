@@ -50,6 +50,8 @@ table {
   border-spacing: 0;
 }
 
+
+
 /*-----------------------End of CSS reset----------------------------------------------*/
 
 body{
@@ -418,8 +420,13 @@ padding: .3em;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding: 1.5em;
+  
   
   
 }
@@ -879,6 +886,7 @@ a {
   padding: .5em;
   border-radius: 5px;
   text-decoration: none;
+  color: white;
 }
 
 
@@ -958,9 +966,11 @@ a {
 
 .checkbox-trigger:checked + .menu-content ul {
   width: 150px;
-  height: 290px;
+  height: 300px;
   transition: width 0.5s ease 0.3s, height 0.3s ease;
 }
+
+
 
 .menu-content {
   display: flex;
@@ -986,7 +996,6 @@ a {
 .menu-content ul li {
   list-style: none;
   padding-top: 1em;
-  padding-bottom: 1em;
   padding-left: 1em;
   cursor: pointer;
   transition: color 0.5s;
@@ -1100,7 +1109,7 @@ ul{
      100% {color:#002E6A;}
   }
 
-#contactKeyFrames{
+#contactKeyFrames, #contactKeyFrames2{
   animation-name: colorChange;
   animation-duration: 5s;
   animation-iteration-count: 10;

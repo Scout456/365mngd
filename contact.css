@@ -94,7 +94,7 @@ table {
     padding: .5em;
     animation-name: colorChange;
     animation-duration: 10s;
-    animation-iteration-count: 5;
+    animation-iteration-count: 10;
   }
 
   #pTagContact{
