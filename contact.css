@@ -235,22 +235,21 @@ table {
  #h1PtagAzNv{
    display: flex;
    flex-direction: row;
-   justify-content: space-around;
-   align-items: center;
+  
    
   }
 
     #h1Contact{
-    font-size: 4.5vw;
+    font-size: 4vw;
     color:#b4d8ec ;
-    padding: .5em;
+    
   }
 
   #pTagContact{
    text-align: start;
    font-size: 2vw;
    line-height: 1.2em;
-   padding: 0 0 0 2em;
+   padding: 0 0 1em 2em;
   }
 
    #h3azContact{
@@ -281,11 +280,7 @@ table {
 
 
   #h1PtagContact{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
+    width: 40vw;
   }
 
   
@@ -314,6 +309,9 @@ table {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+  
+    
+    
   
      }
 
@@ -356,8 +354,9 @@ table {
 
 
   #azMap,#nvMap{
-    border-radius: 10px;
-    width: 95%;
+    border-radius: 20px;
+    width: 30vw;
+    height: 80vh;
  }
 
 
