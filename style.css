@@ -1131,17 +1131,12 @@ ul{
   animation-iteration-count: 10;
 }
 
-
-
-
 .list:hover{
   background-color:#002764;
   color: white;
   padding: 1.3em 1.3em 1.3em 1.3em;
   transition: .7s;
 }
-
-
 
 
   

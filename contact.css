@@ -65,12 +65,198 @@ table {
   color: white;
   }
 
+   
+header{
+  position:fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 10%;
+  background-color: white;
+  display: flex;
+  justify-content:space-between;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding: 1em;
+  grid-area: h;
+}
+
+#icon365{
+  width: 25vh;
+}
+
+#headHorizontalBar{
+  display: none;
+}
+
+
+  /*Beginning of hamburger menu-----------------------------------------------------*/ 
+
+nav{
+  padding-top: .5em;
+}
+
+nav:hover{
+  transform: scale(1.02);
+
+
   
+}
+
+section {
+  display: inline-block;
+  width: 100%;
+}
+
+.anchor {
+  padding: .5em;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+}
+
+
+.checkbox-container {
+  display: block;
+  float: left;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  
+}
+
+.checkbox-trigger {
+  opacity: 0;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 0px;
+  cursor: pointer;
+  z-index: 5;
+}
+
+.hamburger-menu, .hamburger-menu::before, .hamburger-menu::after {
+    display: block;
+    position: absolute;
+    background: white;
+    width: 20px;
+    height: 2px;
+    margin: 1.3em 3em;
+    transition: 0.3s;
+}
+
+.hamburger-menu::before, .hamburger-menu::after {
+    content: '';
+    position: absolute;
+    margin: -0.4em 0 0;
+    transition: width 0.5s ease 0.3s, transform 0.5s ease 0.3s;
+}
+
+.hamburger-menu::after {
+   margin-top: 0.4em; 
+}
+
+.hamburger-menu {
+  position: relative;
+  display: block;
+  margin: 0;
+  margin-top: .9em;
+  margin-right: 0.35em;
+  margin-left: 0.35em;
+  margin-bottom:.8em;
+  transition: width 0.3s ease;
+}
+
+
+.checkbox-trigger:checked {
+  left: 150px;
+}
+
+.checkbox-trigger:checked + .menu-content .hamburger-menu {
+  width: 2em;
+  
+  transition: width 0.5s ease 0.5s;
+}
+
+.checkbox-trigger:checked + .menu-content .hamburger-menu::before {
+  width: 1.2em;
+  transform: rotate(-35deg);
+  margin-top: -0.4em;
+}
+
+.checkbox-trigger:checked + .menu-content .hamburger-menu::after {
+  width: 1.2em;
+  transform: rotate(35deg);
+  margin-top: 0.4em;
+}
+
+.checkbox-trigger:checked + .menu-content ul {
+  width: 150px;
+  height: 300px;
+  transition: width 0.5s ease 0.3s, height 0.3s ease;
+}
+
+
+
+.menu-content {
+  display: flex;
+  color:white;
+  background-color:#002764;
+  float: left;
+  }
+
+
+  .menu-content ul {
+  display: block;
+  padding-left: 0;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin: 0;
+  width: 0px;
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.3s ease 0.5s, width 0.5s ease;
+}
+
+
+.menu-content ul li {
+  list-style: none;
+  padding-top: 1em;
+  padding-left: 1em;
+  cursor: pointer;
+  transition: color 0.5s;
+}
+
+.menu-content ul li:hover {
+  color:lightblue;
+  
+}
+
+ul{
+  position: relative;
+}
+
+#slideOutIcon{
+  border-radius: 10px;
+  width: 100px;
+  position: absolute;
+  left: 30%;
+  top: 5%;
+  
+  
+}
+
+
+/*End of Hamburger menu----------------------------------------------------*/
+
+
+
  #h1PtagAzNv{
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
+  
    
   }
 
@@ -90,11 +276,13 @@ table {
 
   #h1Contact{
     font-size: 8vw;
-    color:#b4d8ec ;
+    color:#b4d8ec;
     padding: .5em;
     animation-name: colorChange;
     animation-duration: 10s;
     animation-iteration-count: 10;
+    margin-top: 2em;
+    
   }
 
   #pTagContact{
@@ -200,9 +388,13 @@ table {
 }
 
 
-  #azMap,#nvMap{
-    border-radius: 10px;
-    padding: .5em;
+ #azMap,#nvMap{
+  width: 100%;
+  height: 60vh;
+  border-radius: 10px;
+  padding: .5em;
+    
+    
 
     
     
@@ -230,12 +422,79 @@ table {
   
   }
 
+  #headHorizontalBar{
+  grid-area: hnb;
+  position:fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 17%;
+  background-color: white;
+  display: flex;
+  
+}
+
+
+ #horizontalIcon{
+  width: 15vw;
+  margin-right: auto;
+}
+
+#ulHorizontalBar, .list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  padding: 1em;
+  color: #0071AC;
+  font-weight: 600;
+  font-size: 1.7vw;
+  cursor: pointer;
+  
+}
+
+  @keyframes colorChange{
+     0% {color: white; }
+     10% {color: #308BBB;}
+     20% {color:#002E6A;}
+     30% {color: #C0821D;}
+     40% {color:white;}
+     50% {color: #308BBB;}
+     60% {color:#002E6A;}
+     70% {color: #C0821D;}
+     80% {color:white;}
+     90% {color: #308BBB;}
+     100% {color:#002E6A;}
+  }
+
+#contactKeyFrames, #contactKeyFrames2{
+  animation-name: colorChange;
+  animation-duration: 5s;
+  animation-iteration-count: 10;
+}
+
+.list:hover{
+  background-color:#002764;
+  color: white;
+  padding: 1.3em 1.3em 1.3em 1.3em;
+  transition: .7s;
+}
+
+
+  
+header{
+  display: none;
+}
+
+#icon365{
+  width: 40vh;
+}
+
 
 
  #h1PtagAzNv{
    display: flex;
    flex-direction: row;
-  
    
   }
 
@@ -309,17 +568,16 @@ table {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-  
-    
     
   
-     }
+ }
 
   #formContact{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 2em;
     
     }
 
@@ -355,6 +613,7 @@ table {
 
   #azMap,#nvMap{
     border-radius: 20px;
+    margin: 0 0 5em 3.5em;
     width: 30vw;
     height: 80vh;
  }
