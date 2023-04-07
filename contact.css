@@ -495,6 +495,7 @@ header{
  #h1PtagAzNv{
    display: flex;
    flex-direction: row;
+   padding: 1em 0 0 0;
    
   }
 
@@ -568,6 +569,7 @@ header{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    padding: 2em;
     
   
  }
@@ -613,8 +615,7 @@ header{
 
   #azMap,#nvMap{
     border-radius: 20px;
-    margin: 0 0 5em 3.5em;
-    width: 30vw;
+    width: 35vw;
     height: 80vh;
  }
 
