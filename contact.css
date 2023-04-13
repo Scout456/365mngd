@@ -248,7 +248,19 @@ ul{
   left: 30%;
   top: 5%;
   
-  
+}
+
+a{
+  cursor: pointer;
+  width: 15vw;
+}
+
+a:hover{
+ font-size: 1.1em;
+ transition: .3s;
+ color:rgb(218, 216, 216);
+
+ 
 }
 
 
@@ -615,6 +627,7 @@ header{
    display: flex;
    flex-direction: row;
    padding: 1em 0 0 0;
+   margin: 1em 0 0 0;
    
   }
 

@@ -135,6 +135,11 @@ header{
 
 #serverPic{
   filter: brightness(70%);
+  width: 100%;
+}
+
+#imgJoe{
+  display: none;
 }
 
 
@@ -450,7 +455,7 @@ padding: .3em;
 }
 
 #btnAugment{
-  background-color: #0071AD;
+  background-color: #002764;
   color: white;
   border: none;
   font-size: 4.5vw;
@@ -461,7 +466,7 @@ padding: .3em;
 
 
 #btnAugment:hover{
-  background-color: #002764;
+  background-color:#0071AC;
   margin-left: 1em;
   cursor: pointer;
 }
@@ -905,6 +910,19 @@ section {
   color: white;
 }
 
+a{
+  cursor: pointer;
+  width: 15vw;
+
+}
+
+a:hover{
+ font-size: 1.1em;
+ transition: .3s;
+ color:rgb(218, 216, 216);
+ 
+}
+
 
 .checkbox-container {
   display: block;
@@ -1086,9 +1104,11 @@ ul{
   top: 0;
   z-index: 1;
   width: 100%;
-  height: 15%;
+  height: 15vh;
   background-color: white;
+  display: block;
   display: flex;
+
   
 }
 
@@ -1096,20 +1116,33 @@ ul{
  #horizontalIcon{
   width: 20vw;
   margin-right: auto;
+  
+  
+
+  
 }
 
-#ulHorizontalBar, .list{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-left: auto;
-  padding: 1em;
+#ulHorizontalBar{
   color: #0071AC;
   font-weight: 600;
   font-size: 1.7vw;
   cursor: pointer;
+
+}
+
+.list{
+  color: #0071AC;
+  font-weight: 600;
+  font-size: 1.7vw;
+  display: inline;
+  cursor: pointer;
   
 }
+
+
+
+
+
 
   @keyframes colorChange{
      0% {color: white; }
@@ -1139,6 +1172,8 @@ ul{
 }
 
 
+
+
   
 header{
   display: none;
@@ -1157,7 +1192,10 @@ header{
 
 #serverPic{
   filter: brightness(70%);
+  width: 100%;
 }
+
+
 
 
 #serverText{
@@ -1200,6 +1238,8 @@ header{
   background-color: #002764;
   margin-left: .5em;
 }
+
+
 
 
 
@@ -1556,7 +1596,7 @@ padding: .3em;
   font-weight: 600;
   }
 
-   #googleWorkspaceBtn{
+#googleWorkspaceBtn{
   margin-top: 2em;
   border: none;
   border-radius: 15px 15px;
