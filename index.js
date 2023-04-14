@@ -3,7 +3,7 @@
 
   root:document.theOptions, 
 
-  threshold:0.50, 
+  threshold:0.40, 
 
   rootMargin:"0px 0px 0px 0px"
 
