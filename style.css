@@ -74,8 +74,8 @@ body{
 #mainContain{
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  gap: 40px;
-
+  gap: 25px;
+  width: 100%;
   text-align: start;
   font-family: serif;
   grid-template-areas: 
