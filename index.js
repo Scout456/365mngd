@@ -1,61 +1,9 @@
 /*Intersection Observer*/
-const theOptions = { 
+ const theOptions = { 
 
-  root:null, 
+  root:document.theOptions, 
 
-  threshold:0.2, 
-
-  rootMargin:"0px 0px 0px 0px"
-
-
-   }; 
-
-  const observer = new IntersectionObserver(entries => { 
-
-  entries.forEach(entry => { 
-
-    if(entry.isIntersecting){ 
-
-      entry.target.classList.add('in-view'); 
-
-      observer.unobserve(entry.target); 
-
-    } 
-
-  }); 
-
-}, theOptions); 
-
- window.addEventListener('DOMContentLoaded',(event) =>{ 
-
- /* const sections = Array.from(document.getElementsByClassName('section'));
-   for (let section of sections) {
-     const children = section.getElementsByClassName('fade-delay');
-     for (let count = 0; count < children.length; count++) {
-        children[count].setAttribute('style', 'transition-delay: ' + count * 0.5 + 's');
-    }
-  observer.observe(section);
-}
-});*/
-
-  const sections = Array.from(document.getElementsByClassName('section')); 
-
-  for (let section of sections){ 
-
-    observer.observe(section); 
-
-  } 
-
-}); 
-
-
-/*Intersection Observer Function*/
-function myFunction(){
-const theOptions = { 
-
-  root:null, 
-
-  threshold:0, 
+  threshold:0.50, 
 
   rootMargin:"0px 0px 0px 0px"
 
@@ -90,6 +38,7 @@ const theOptions = {
 }
 });*/
 
+
   const sections = Array.from(document.getElementsByClassName('section')); 
 
   for (let section of sections){ 
@@ -99,7 +48,10 @@ const theOptions = {
   } 
 
 }); 
-}
+
+
+
+
 
 /*--------Submit form response on button----------------------------------------*/
 
