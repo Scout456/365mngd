@@ -1134,6 +1134,7 @@ ul{
 
 .list{
   color: #0071AC;
+  margin: .5em;
   font-weight: 600;
   font-size: 1.7vw;
   display: inline;
