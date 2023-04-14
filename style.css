@@ -1115,7 +1115,9 @@ ul{
 
  #horizontalIcon{
   width: 20vw;
+  height: 15vh;
   margin-right: auto;
+  border-radius:10px ;
   
   
 
