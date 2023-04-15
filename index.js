@@ -1,7 +1,7 @@
 /*Intersection Observer*/
  const theOptions = { 
 
-  root:document.section, 
+  root:null, 
 
   threshold:0, 
 
