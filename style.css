@@ -63,7 +63,12 @@ a{
 
 /*-----------------------End of CSS reset----------------------------------------------*/
 
-
+body {
+background-image: url("images/serverPic\ \(1\).jpg");
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+}
 
 #mainContain{
   display: grid;
@@ -72,11 +77,7 @@ a{
   width: 100%;
   text-align: start;
   font-family: serif;
-  background-image: url(images/serverPic\ \(1\).jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+
   grid-template-areas: 
   "h h h h h h h h h h h h"
   "s s s s s s s s s s s s"
@@ -177,6 +178,11 @@ header{
 #serverBtn:hover{
   background-color: #002764;
   margin-left: .5em;
+}
+
+.animate_rotateIn{
+  animation: rotateIn;
+  animation-duration: 1.2s;
 }
 
 
@@ -846,7 +852,7 @@ margin: .3em 0 .3em 0;
  }
 
   .fade-bottom { 
-  transform: translateY(40px); 
+  transform: translateY(60px); 
   opacity: 0; 
   transition-property: transform, opacity; 
   transition-duration: .7s; 
@@ -859,7 +865,7 @@ margin: .3em 0 .3em 0;
   .fade-in{ 
   opacity: 0; 
   transition-property: transform, opacity; 
-  transition-duration: .7s; 
+  transition-duration: 1s; 
   transition-timing-function:ease-in; 
 
   }
