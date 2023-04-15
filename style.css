@@ -63,14 +63,7 @@ a{
 
 /*-----------------------End of CSS reset----------------------------------------------*/
 
-body{
-  background-image: url(images/serverPic\ \(1\).jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  
-}
+
 
 #mainContain{
   display: grid;
@@ -79,6 +72,11 @@ body{
   width: 100%;
   text-align: start;
   font-family: serif;
+  background-image: url(images/serverPic\ \(1\).jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   grid-template-areas: 
   "h h h h h h h h h h h h"
   "s s s s s s s s s s s s"
