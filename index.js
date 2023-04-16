@@ -5,7 +5,7 @@
 
   threshold:0, 
 
-  rootMargin:"-50px -50px -50px -50px"
+  rootMargin:"-100px -50px -100px -50px"
 
 
    }; 
