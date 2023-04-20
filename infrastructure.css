@@ -277,6 +277,47 @@ ul{
 
 /*End of Hamburger menu----------------------------------------------------*/
 
+#mainInfra{
+padding:3em 1em 0 1em;
+  
+}
+
+#itInfra{
+  background-color: whitesmoke;
+  padding: .5em;
+  opacity: .7;
+}
+
+.h1Infra{
+font-size: 10vw;
+}
+
+.ptagInfra{
+  padding: .5em 0 .5em 0;
+  font-size: 5vw;
+  line-height: 1.2;
+}
+
+.btnInfra{
+  border: none;
+  border-radius: 20px 20px;
+  padding: .5em;
+  background-color: #002E6A;
+  color: whitesmoke;
+  font-size: 4vw;
+}
+
+.btnInfra:hover{
+  background-color:rgb(21, 17, 17);
+  margin-left: .5em;
+
+}
+
+.imgJoeInfra{
+  display: none;
+
+}
+
 
 
 
@@ -363,8 +404,6 @@ ul{
 }
 
 
-
-
   
 header{
   display: none;
@@ -374,7 +413,46 @@ header{
   width: 15vh;
 }
 
+#mainInfra{
+  margin: 3em 0 0 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  align-items: stretch;
+  gap: 1em;
 
 }
 
 
+.h1Infra{
+font-size: 5vw;
+}
+
+.ptagInfra{
+  padding: .5em 0 .5em 0;
+  font-size: 2vw;
+  line-height: 1.2;
+}
+
+.btnInfra{
+  border: none;
+  border-radius: 20px 20px;
+  padding: .5em;
+  background-color: #002E6A;
+  color: whitesmoke;
+  font-size: 1.5vw;
+}
+
+.btnInfra:hover{
+  background-color:rgb(21, 17, 17);
+  margin-left: .5em;
+
+}
+
+.imgJoeInfra{
+  width: 100%;
+  display: block;
+}
+
+
+}
