@@ -65,7 +65,9 @@ a{
 body {
 	background: linear-gradient(-45deg, #BF8015,#0071AC, #002764, #0071AC, #23d5ab);
 	background-size: 400% 400%;
-	animation: gradient 10s ease infinite;
+  background-position: center;
+  background-repeat: no-repeat;
+	animation: gradient 7s ease infinite;
 	height: 100vh;
 }
 
@@ -271,11 +273,11 @@ ul{
   left: 30%;
   top: 5%;
   
-  
 }
 
-
 /*End of Hamburger menu----------------------------------------------------*/
+
+
 
 
 
@@ -350,7 +352,7 @@ ul{
 #contactKeyFrames, #contactKeyFrames2{
   animation-name: colorChange;
   animation-duration: 5s;
-  animation-iteration-count: 10;
+  animation-iteration-count: infinite;
 }
 
 .list:hover{
@@ -369,7 +371,7 @@ header{
 }
 
 #icon365{
-  width: 40vh;
+  width: 15vh;
 }
 
 
