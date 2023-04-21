@@ -337,7 +337,10 @@ font-size: 10vw;
 }
 #imgProject{
 grid-area: ip;
-width: 100%;
+width: 95%;
+margin-left: auto;
+margin-right: auto;
+display: block;
 
 }
 
@@ -350,6 +353,7 @@ width: 100%;
 
 #h1PtagProject, #h1PtagHardware, #h1PtagTele, #h1PtagCloud{
  background-color: #DCEAF5;
+ margin: .5em 0 0 0;
  padding: 1em;
  width: 95%;
  margin-left: auto;
@@ -362,7 +366,10 @@ width: 100%;
 
 #imgHardware{
   grid-area: ih;
-  width: 100%;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
   
 }
 
@@ -373,7 +380,10 @@ width: 100%;
 
 #imgTele{
   grid-area: it;
-  width: 100%;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
   
 }
 
