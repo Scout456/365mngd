@@ -363,6 +363,31 @@ display: block;
  
 }
 
+#h1Project, #h1Hardware,#h1Tele, #h1Cloud {
+  font-size: 8vw;
+  padding: 0 0 .5em 0;
+}
+
+#pTagProject, #pTagHardware, #pTagTele, #pTagCloud{
+  font-size: 5vw;
+  line-height: 1.2;
+}
+
+#btnProject, #btnHardware, #btnTele, #btnCloud{
+  font-size: 5vw;
+  margin: .5em 0 0 0;
+  padding: .3em;
+  border: none;
+  background-color: #0071AC;
+  border-radius: 20px 20px;
+}
+
+#btnProject:hover, #btnHardware:hover, #btnTele:hover,#btnCloud:hover {
+  background-color: #002E6A;
+  color: whitesmoke;
+  margin-left: .5em;
+}
+
 
 #imgHardware{
   grid-area: ih;
@@ -452,10 +477,6 @@ display: block;
   cursor: pointer;
   
 }
-
-
-
-
 
 
   @keyframes colorChange{
@@ -602,6 +623,44 @@ width: 100%;
 
 #cloud{
   grid-area: c;
+}
+
+
+#h1PtagProject, #h1PtagHardware, #h1PtagTele, #h1PtagCloud{
+ background-color: #DCEAF5;
+ margin: .5em 0 0 0;
+ padding: 1em;
+ width: 95%;
+ margin-left: auto;
+ margin-right: auto;
+ display: block;
+ border: 6px #DCEAF5 ridge;
+ 
+}
+
+#h1Project, #h1Hardware,#h1Tele, #h1Cloud {
+  font-size: 4vw;
+  padding: 0 0 .5em 0;
+}
+
+#pTagProject, #pTagHardware, #pTagTele, #pTagCloud{
+  font-size: 2vw;
+  line-height: 1.2;
+}
+
+#btnProject, #btnHardware, #btnTele, #btnCloud{
+  font-size: 2vw;
+  margin: .5em 0 0 0;
+  padding: .3em;
+  border: none;
+  background-color: #0071AC;
+  border-radius: 20px 20px;
+}
+
+#btnProject:hover, #btnHardware:hover, #btnTele:hover,#btnCloud:hover {
+  background-color: #002E6A;
+  color: whitesmoke;
+  margin-left: .5em;
 }
 
 
