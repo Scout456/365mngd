@@ -380,11 +380,11 @@ display: block;
   border: none;
   background-color: #0071AC;
   border-radius: 20px 20px;
+  color: whitesmoke;
 }
 
 #btnProject:hover, #btnHardware:hover, #btnTele:hover,#btnCloud:hover {
   background-color: #002E6A;
-  color: whitesmoke;
   margin-left: .5em;
 }
 
@@ -655,11 +655,11 @@ width: 100%;
   border: none;
   background-color: #0071AC;
   border-radius: 20px 20px;
+  color: whitesmoke;
 }
 
 #btnProject:hover, #btnHardware:hover, #btnTele:hover,#btnCloud:hover {
   background-color: #002E6A;
-  color: whitesmoke;
   margin-left: .5em;
 }
 
