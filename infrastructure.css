@@ -328,18 +328,15 @@ font-size: 10vw;
   text-align: start;
   font-family: serif;
   grid-template-areas: 
-  'ip ip ip ip ip ip ip ip ip ip ip ip'
   'p p p p p p p p p p p p'
-  'ih ih ih ih ih ih ih ih ih ih ih ih'
   'h h h h h h h h h h h h'
-  'it it it it it it it it it it it it'
   't t t t t t t t t t t t'
-  'ic ic ic ic ic ic ic ic ic ic ic ic'
   'c c c c c c c c c c c c'
 }
 #imgProject{
 grid-area: ip;
 width: 100%;
+opacity: .7;
 }
 
 
@@ -351,6 +348,7 @@ width: 100%;
 #imgHardware{
   grid-area: ih;
   width: 100%;
+  opacity: .7;
 }
 
 
@@ -360,7 +358,8 @@ width: 100%;
 
 #imgTele{
   grid-area: it;
-width: 100%;
+  width: 100%;
+  opacity: .7;
 }
 
 #tele{
@@ -370,6 +369,7 @@ width: 100%;
 #imgCloud{
   grid-area: ic;
   width: 100%;
+  opacity: .7;
 }
 
 #cloud{
@@ -516,7 +516,9 @@ font-size: 5vw;
 }
 
 .imgJoeInfra{
-  width: 100%;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
   display: block;
   opacity: .8;
   border: 6px #B1C5DA ridge ;
