@@ -434,6 +434,64 @@ display: block;
 }
 
 
+/*Animation--------------------------------------------------------------*/
+
+.spin { 
+  opacity: 0; 
+  transition-property: transform, opacity; 
+  transition-duration: 1.2s; 
+  transition-timing-function: ease-in; 
+  transform: rotate(360deg);
+
+ } 
+
+.fade-left { 
+  transform: translateX(-40px); 
+  opacity: 0; 
+  transition-property: transform, opacity; 
+  transition-duration: .7s; 
+  transition-timing-function: ease-in; 
+  /*transform: rotate(360deg);*/
+
+ } 
+
+ .fade-right { 
+  transform: translateX(40px); 
+  opacity: 0; 
+  transition-property: transform, opacity; 
+  transition-duration: .7s; 
+  transition-timing-function: ease-in; 
+  /*transform: rotate(360deg);*/
+
+ }
+
+  .fade-bottom { 
+  transform: translateY(60px); 
+  opacity: 0; 
+  transition-property: transform, opacity; 
+  transition-duration: .7s; 
+  transition-timing-function:linear; 
+  /*transform: rotate(360deg);*/
+
+ } 
+
+ 
+  .fade-in{ 
+  opacity: 0; 
+  transition-property: transform, opacity; 
+  transition-duration: 1s; 
+  transition-timing-function:ease-in; 
+
+  }
+
+
+ /*Shows text with JS intersection Observer*/ 
+.in-view{ 
+  transform:none; 
+  opacity: 1; 
+} 
+
+/*End of animation-----------------------------------------------------------------*/
 
 
 
