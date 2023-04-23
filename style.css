@@ -808,6 +808,9 @@ margin: .3em 0 .3em 0;
   color: white;
 }
 
+
+
+
 #copyRight{
   display: flex;
   justify-content: space-evenly;
@@ -1110,7 +1113,6 @@ ul{
 
  #horizontalIcon{
   width: 15vw;
-  height: 15vh;
   margin-right: auto;
   border-radius:10px ;
   
