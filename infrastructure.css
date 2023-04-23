@@ -434,6 +434,67 @@ display: block;
   grid-area: c;
 }
 
+#mainFrostedGlass{
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(-45deg,#0071AC, #002E6A, #002764);
+	background-size: 400% 400%;
+  background-position: center;
+  background-repeat: no-repeat;
+	animation: gradient 5s ease infinite;
+  padding: .5em;
+  color: whitesmoke;
+	
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+  
+}
+
+#frostedGlassCard{
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, .15);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 1px 12px rgb(0, 0, 0, 0.25);
+  padding: .5em;
+
+}
+
+  #h1Frost{
+    font-size: 8vw;
+    padding-bottom: 1em;
+    text-align: center;
+  }
+
+  #pTagFrost{
+    font-size:5vw;
+    line-height: 1.2;
+    text-align: start;
+  
+  }
+
+
+  /*border-radius: 8px;
+  backdrop-filter: blur(5px);
+  background-color: rgb(255, 255, 255, 0.15);
+  box-shadow: 0 1px 12px rgb(0, 0, 0, 0.25);
+  border: 1px solid rgb(255, 255, 255, 0.3);*/
+
+
+
 
 /*Animation--------------------------------------------------------------*/
 
