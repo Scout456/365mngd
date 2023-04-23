@@ -440,7 +440,7 @@ display: block;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(-45deg,#0071AC, #002E6A, #002764);
+  background: linear-gradient(-60deg, #002E6A, #0071AC, #002764);
 	background-size: 400% 400%;
   background-position: center;
   background-repeat: no-repeat;
@@ -789,6 +789,19 @@ width: 100%;
   background-color: #002E6A;
   margin-left: .5em;
 }
+
+  #h1Frost{
+    font-size: 4vw;
+    text-align: center;
+  }
+
+  #pTagFrost{
+    font-size:2vw;
+    line-height: 1.2;
+    text-align: start;
+    padding: 1em;
+  
+  }
 
 
 }
