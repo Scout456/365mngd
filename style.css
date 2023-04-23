@@ -834,20 +834,20 @@ margin: .3em 0 .3em 0;
  } 
 
 .fade-left { 
-  transform: translateX(-40px); 
+  transform: translateX(-50px); 
   opacity: 0; 
   transition-property: transform, opacity; 
-  transition-duration: .7s; 
+  transition-duration: .5s; 
   transition-timing-function: ease-in; 
   /*transform: rotate(360deg);*/
 
  } 
 
  .fade-right { 
-  transform: translateX(40px); 
+  transform: translateX(50px); 
   opacity: 0; 
   transition-property: transform, opacity; 
-  transition-duration: .7s; 
+  transition-duration: .5s; 
   transition-timing-function: ease-in; 
   /*transform: rotate(360deg);*/
 
@@ -857,8 +857,8 @@ margin: .3em 0 .3em 0;
   transform: translateY(60px); 
   opacity: 0; 
   transition-property: transform, opacity; 
-  transition-duration: .7s; 
-  transition-timing-function:linear; 
+  transition-duration: .5s; 
+  transition-timing-function:ease-in; 
   /*transform: rotate(360deg);*/
 
  } 
