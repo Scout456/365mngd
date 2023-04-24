@@ -790,16 +790,49 @@ width: 100%;
   margin-left: .5em;
 }
 
+#mainFrostedGlass{
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(-60deg, #002E6A, #0071AC, #002764);
+	background-size: 400% 400%;
+  background-position: center;
+  background-repeat: no-repeat;
+	animation: gradient 5s ease infinite;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  color: whitesmoke;
+	
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+  
+}
+
   #h1Frost{
     font-size: 4vw;
     text-align: center;
+    padding: .5em;
   }
 
   #pTagFrost{
     font-size:2vw;
-    line-height: 1.2;
+    line-height: 1.3;
     text-align: start;
-    padding: 1em;
+    padding: .5em;
+  
   
   }
 
