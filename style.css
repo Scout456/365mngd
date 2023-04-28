@@ -834,9 +834,9 @@ margin: .3em 0 .3em 0;
  } 
 
 .fade-left { 
-  transform: translateX(-50px); 
+  transform: translate3d(2rem, 2rem, 0);
   opacity: 0; 
-  transition-property: transform, opacity; 
+  transition: all; 
   transition-duration: .5s; 
   transition-timing-function: ease-in; 
   /*transform: rotate(360deg);*/
@@ -844,9 +844,9 @@ margin: .3em 0 .3em 0;
  } 
 
  .fade-right { 
-  transform: translateX(50px); 
+  transform: translate3d(-2rem, 0, 0);
   opacity: 0; 
-  transition-property: transform, opacity; 
+  transition:all; 
   transition-duration: .5s; 
   transition-timing-function: ease-in; 
   /*transform: rotate(360deg);*/
@@ -856,7 +856,7 @@ margin: .3em 0 .3em 0;
   .fade-bottom { 
   transform: translateY(60px); 
   opacity: 0; 
-  transition-property: transform, opacity; 
+  transition:all; 
   transition-duration: .5s; 
   transition-timing-function:ease-in; 
   /*transform: rotate(360deg);*/
@@ -875,7 +875,8 @@ margin: .3em 0 .3em 0;
 
  /*Shows text with JS intersection Observer*/ 
 .in-view{ 
-  transform:none; 
+  transform: translate3d(0, 0, 0);
+  /*transform:none; */
   opacity: 1; 
 } 
 
