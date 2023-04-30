@@ -63,11 +63,11 @@ a{
 
 
 body {
-	background: linear-gradient(-45deg,#0071AC, #BF8015, #002764, #0071AC);
+	background: linear-gradient(-45deg,#308BBB, #002764, #308BBB);
 	background-size: 400% 400%;
   background-position: center;
   background-repeat: no-repeat;
-	animation: gradient 7s ease infinite;
+	animation: gradient 5s ease infinite;
 	
 }
 
@@ -310,7 +310,7 @@ font-size: 10vw;
   border: none;
   border-radius: 20px 20px;
   padding: .5em;
-  background-color: #002E6A;
+  background-color: #0071AC;
   color: whitesmoke;
   font-size: 4vw;
 }
@@ -487,11 +487,72 @@ display: block;
   }
 
 
+  #betweenFrostImg{
+  width: 80%;
+  margin: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  }
+
+
   /*border-radius: 8px;
   backdrop-filter: blur(5px);
   background-color: rgb(255, 255, 255, 0.15);
   box-shadow: 0 1px 12px rgb(0, 0, 0, 0.25);
   border: 1px solid rgb(255, 255, 255, 0.3);*/
+
+  
+#mainFrostedGlass2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(-60deg, #BF8015, #002764,#BF8015);
+	background-size: 400% 400%;
+  background-position: center;
+  background-repeat: no-repeat;
+	animation: gradient 5s ease infinite;
+  padding: 1em;
+  color: whitesmoke;
+	
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+  
+}
+
+#frostedGlassCard2{
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, .15);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 1px 12px rgb(0, 0, 0, 0.25);
+  padding: .5em;
+
+}
+
+  #h1Frost2{
+    font-size: 8vw;
+    padding-bottom: 1em;
+    text-align: center;
+  }
+
+  #pTagFrost2{
+    font-size:5vw;
+    line-height: 1.2;
+    text-align: start;
+  
+  }
 
 
 
@@ -805,6 +866,7 @@ width: 100%;
   margin-left: auto;
   margin-right: auto;
   color: whitesmoke;
+  padding: 1em;
 	
 }
 
@@ -831,10 +893,70 @@ width: 100%;
     font-size:2vw;
     line-height: 1.3;
     text-align: start;
-    padding: .5em;
+    padding: 1em;
   
   
   }
+
+  
+  #betweenFrostImg{
+  width: 80%;
+  height: 400px;
+  margin: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  }
+    
+
+  
+#mainFrostedGlass2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(-60deg, #BF8015, #002764,#BF8015);
+	background-size: 400% 400%;
+  background-position: center;
+  background-repeat: no-repeat;
+	animation: gradient 5s ease infinite;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  color: whitesmoke;
+  padding: 1em;
+	
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+  
+}
+
+  #h1Frost2{
+    font-size: 4vw;
+    text-align: center;
+    padding: .5em;
+  }
+
+  #pTagFrost2{
+    font-size:2vw;
+    line-height: 1.3;
+    text-align: start;
+    padding: 1em;
+  
+  
+  }
+
+
 
 
 }

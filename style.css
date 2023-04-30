@@ -128,7 +128,7 @@ header{
 
 #support{
   grid-area: s;
-  color: white;
+  color: #FFFFF0;
   position: relative;
 }
 
@@ -167,10 +167,10 @@ header{
 
 #serverBtn{
   margin-top: 10px;
-  color:white;
+  color: #FFFFF0;
   font-size: 3vw;
   background-color: transparent;
-  border: 2px solid white;
+  border: 2px solid #FFFFF0;
   border-radius: 20px;
   cursor: pointer;
 }
@@ -192,7 +192,7 @@ header{
 #img1{
   grid-area: img1;
   position: relative;
-  color: white;
+  color: #FFFFF0;
   width: 80%;
   margin-right: auto;
   margin-left: auto;
@@ -204,6 +204,7 @@ header{
   top: 2vw;
   padding: .5em;
   font-size: 5vw;
+  color:#FFFFF0;
 }
 
 #infraPara{
@@ -212,13 +213,14 @@ header{
   font-size: 3vw;
   line-height: 1.2em;
   padding: 1em;
+  color: #FFFFF0;
 }
 
 #infraBtn{
-  color:white;
+  color:#FFFFF0;
   font-size: 3vw;
   background-color: transparent;
-  border: 2px solid white;
+  border: 2px solid #FFFFF0;
   border-radius: 20px;
   cursor: pointer;
   margin-top: 1em;
@@ -235,7 +237,7 @@ header{
 #img2{
   grid-area: img2;
   position: relative;
-  color: white;
+  color:#FFFFF0;
   width: 80%;
   margin-right: auto;
   margin-left: auto;
@@ -250,6 +252,7 @@ header{
   top: 3vw;
   font-size: 5vw;
   padding: .5em;
+  color: #FFFFF0;
 }
 
 #optimPtag{
@@ -258,13 +261,14 @@ header{
   font-size: 3vw;
   line-height: 1.3em;
   padding: 1em;
+  color: #FFFFF0;
 }
 
 #optimBtn{
-  color:white;
+  color: #FFFFF0;
   font-size: 3vw;
   background-color: transparent;
-  border: 2px solid white;
+  border: 2px solid #FFFFF0;
   border-radius: 20px;
   cursor: pointer;
   margin-top: 2em;
@@ -274,7 +278,7 @@ header{
 
 #img3{
   grid-area: img3;
-  color: white;
+  color: #FFFFF0;
   width: 80%;
   margin-right: auto;
   margin-left: auto;
@@ -291,6 +295,7 @@ header{
   padding: .5em;
   position: absolute;
   top: 3vw;
+  color:#FFFFF0;
  }
 
  #paraItManage{
@@ -299,14 +304,15 @@ header{
   font-size: 3vw;
   line-height: 1.3em;
   padding: 1em;
+  color: #FFFFF0;
 
  }
 
  #itBtn{
-  color:white;
+  color:#FFFFF0;
   font-size: 3vw;
   background-color: transparent;
-  border: 2px solid white;
+  border: 2px solid #FFFFF0;
   border-radius: 20px;
   cursor: pointer;
   margin-top:1em;
