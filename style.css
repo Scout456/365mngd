@@ -391,7 +391,7 @@ padding: .3em;
 
 #services{
   grid-area: ser;
-  color: white;
+  color: whitesmoke;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
@@ -402,7 +402,7 @@ padding: .3em;
 
 #efficiently{
   grid-area: ef;
-  color: white;
+  color: whitesmoke;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
@@ -414,7 +414,7 @@ padding: .3em;
 
 #partners{
   grid-area: p;
-  color: white;
+  color: whitesmoke;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
@@ -457,7 +457,7 @@ padding: .3em;
 }
 
 .h1Span{
-  color: white;
+  color: whitesmoke;
   background-color: #0071AD;
   font-size: 6vw;
   line-height: 1.5em;
@@ -467,7 +467,7 @@ padding: .3em;
 
 #btnAugment{
   background-color: #002764;
-  color: white;
+  color: whitesmoke;
   border: none;
   font-size: 4.5vw;
   border-radius: 15px 15px;
@@ -486,7 +486,7 @@ padding: .3em;
 
 #blogNews{
   grid-area: bn;
-  color: white;
+  color: whitesmoke;
   padding: .5em;
   background-color:#002764;
   width: 90%;
@@ -672,7 +672,7 @@ padding: .3em;
   text-align: start;
   margin-left: auto;
   margin-right: auto;
-  color: white;
+  color: whitesmoke;
 }
 
 
@@ -711,7 +711,7 @@ textarea{
 footer{
   grid-area: f;
   background-image: linear-gradient(#002764,#0071AD,#044E7B,#002764);
-  color: white;
+  color: whitesmoke;
   border:4px white ridge;
   
   }
@@ -1013,7 +1013,7 @@ a:hover{
 
 .menu-content {
   display: flex;
-  color:white;
+  color:whitesmoke;
   background-color:#002764;
   float: left;
   }
@@ -1080,7 +1080,7 @@ ul{
 #mainContain{
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  gap: 40px;
+  gap: 30px;
   width: 100%;
   font-family: serif;
   text-align: start;
@@ -1192,7 +1192,7 @@ header{
 
 #support{
   grid-area: s;
-  color: white;
+  color: whitesmoke;
   position: relative;
 }
 
@@ -1720,6 +1720,7 @@ cursor: pointer;
 
 
 footer{
+  
   grid-area: f;
   background-image: linear-gradient(#002764,#0071AD,#044E7B,#002764);
   color: white;
@@ -1827,66 +1828,6 @@ padding:2em 1.3em 0 0;
 }
 
 
-
-
-
-
-/*Animation--------------------------------------------------------------*/
-
-.spin { 
-  opacity: 0; 
-  transition-property: transform, opacity; 
-  transition-duration: 1.2s; 
-  transition-timing-function: ease-in; 
-  transform: rotate(360deg);
-
- } 
-
-.fade-left { 
-  transform: translateX(-40px); 
-  opacity: 0; 
-  transition-property: transform, opacity; 
-  transition-duration: .7s; 
-  transition-timing-function: ease-in; 
-  /*transform: rotate(360deg);*/
-
- } 
-
- .fade-right { 
-  transform: translateX(40px); 
-  opacity: 0; 
-  transition-property: transform, opacity; 
-  transition-duration: .7s; 
-  transition-timing-function: ease-in; 
-  /*transform: rotate(360deg);*/
-
- }
-
-  .fade-bottom { 
-  transform: translateY(40px); 
-  opacity: 0; 
-  transition-property: transform, opacity; 
-  transition-duration: .7s; 
-  transition-timing-function:linear; 
-  /*transform: rotate(360deg);*/
-
- } 
-
- 
-  .fade-in{ 
-  opacity: 0; 
-  transition-property: transform, opacity; 
-  transition-duration: .7s; 
-  transition-timing-function:ease-in; 
-
-  }
-
-
- /*Shows text with JS intersection Observer*/ 
-.in-view{ 
-  transform:none; 
-  opacity: 1; 
-} 
 
 
 }
