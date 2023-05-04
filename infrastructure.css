@@ -487,12 +487,13 @@ display: block;
   }
 
 
-  #betweenFrostImg{
+  #betweenFrostImg, #betweenFrostImg2{
   width: 80%;
   margin: 1em;
   margin-left: auto;
   margin-right: auto;
   display: block;
+  border-radius: 10px;
   }
 
 
@@ -553,6 +554,75 @@ display: block;
     text-align: start;
   
   }
+
+  /* Form page---------------------------------------------------------*/
+
+#formMain{
+  position: relative;
+  text-align: center;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  background-image: linear-gradient( #0071AD,#044E7B,#002764);
+  border: 4px ridge white ;
+  color: white;
+  margin-top: 1em;
+
+}
+
+#h2Form{
+  font-size: 5vw;
+  padding: .5em;
+
+}
+
+#pTagForm{
+  font-size: 3vw;
+  padding: .5em;
+}
+
+#mainFormPage{
+  grid-area: mfp;
+  width: 80%;
+  text-align: start;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+}
+
+
+
+
+input{
+  display: flex;
+  width: 90%;
+  padding: .5em;
+  margin: .3em;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  }
+
+input:focus, textarea:focus{
+  background-color:lightblue;
+}
+
+input:hover, textarea:hover{
+  border: 4px solid #0071AC;
+}
+
+#formInputs2{
+padding: 0 0 0 .4em;
+
+}
+
+textarea{
+ border-radius: 5px;
+ border: none;
+ cursor: pointer;
+ width: 94%;
+}
 
 
 
@@ -854,8 +924,8 @@ width: 100%;
 #mainFrostedGlass{
   margin-top: 1em;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction:row;
+  justify-content: space-between;
   align-items: center;
   background: linear-gradient(-60deg, #002E6A, #0071AC, #002764);
 	background-size: 400% 400%;
@@ -899,20 +969,18 @@ width: 100%;
   }
 
   
-  #betweenFrostImg{
-  width: 80%;
-  height: 400px;
-  margin: 1em;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
+  #betweenFrostImg, #betweenFrostImg2{
+  width:95%;
+  border-radius: 10px;
+  
+  
   }
     
 
   
 #mainFrostedGlass2{
   display: flex;
-  flex-direction: column;
+  flex-direction: row-reverse;
   justify-content: center;
   align-items: center;
   background: linear-gradient(-60deg, #BF8015, #002764,#BF8015);
@@ -924,6 +992,7 @@ width: 100%;
   margin-left: auto;
   margin-right: auto;
   color: whitesmoke;
+  margin-top: 1em;
   padding: 1em;
 	
 }
@@ -955,6 +1024,62 @@ width: 100%;
   
   
   }
+
+
+  
+#formMain{
+  grid-area: fm;
+  position: relative;
+  text-align: center;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #0071AD;
+  border: 4px ridge white ;
+  color: white;
+
+}
+
+#h2Form{
+  font-size: 4vw;
+  padding: .5em;
+
+}
+
+#pTagForm{
+  font-size: 2vw;
+  padding: .5em;
+}
+
+
+#mainFormPage{
+  grid-area: mfp;
+  text-align: start;
+  color: white;
+  
+}
+
+#formInputsMain{
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+  align-items: center;
+  padding: .5em;
+}
+
+.fa-user, .fa-envelope, .fa-phone, .fa-user-plus{
+  font-size: 1.3vw;
+}
+
+input{
+  padding: .5em;
+  font-size: 1.5vw;
+  margin: .5em;
+}
+
+textarea{
+  font-size: 1.5vw;
+}
 
 
 
