@@ -564,7 +564,7 @@ display: block;
   margin-left: auto;
   margin-right: auto;
   display: block;
-  background-image: linear-gradient(#C0821D, #0071AD,#044E7B);
+  background-image: linear-gradient(#C0821D, #0071AD,#044E7B,#C0821D);
   border: 4px ridge white ;
   color: whitesmoke;
   margin-top: 1em;
