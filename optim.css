@@ -1,0 +1,1322 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+/*-----------------------End of CSS reset----------------------------------------------*/
+
+
+body {
+	background: linear-gradient(-45deg, #0071AC, #002764, whitesmoke);
+	background-size: 400% 400%;
+  background-position: center;
+  background-repeat: no-repeat;
+	animation: gradient 5s ease infinite;
+	
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+header{
+  position:fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 10%;
+  background-color: white;
+  display: flex;
+  justify-content:space-between;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding: 1em;
+
+}
+
+#icon365{
+  width: 20vh;
+  margin: 0 1.2em 0 0;
+}
+
+#headHorizontalBar{
+  display: none;
+}
+
+  /*Beginning of hamburger menu-----------------------------------------------------*/ 
+
+nav{
+  padding-top: .5em;
+}
+
+nav:hover{
+  transform: scale(1.02);
+
+
+  
+}
+
+section {
+  display: inline-block;
+  width: 100%;
+}
+
+.anchor {
+  padding: .5em;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+}
+
+a{
+  cursor: pointer;
+  width: 15vw;
+
+}
+
+a:hover{
+ font-size: 1.1em;
+ transition: .3s;
+ color:rgb(218, 216, 216);
+ 
+}
+
+
+.checkbox-container {
+  display: block;
+  float: left;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  
+}
+
+.checkbox-trigger {
+  opacity: 0;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 0px;
+  cursor: pointer;
+  z-index: 5;
+}
+
+.hamburger-menu, .hamburger-menu::before, .hamburger-menu::after {
+    display: block;
+    position: absolute;
+    background: white;
+    width: 20px;
+    height: 2px;
+    margin: 1.3em 3em;
+    transition: 0.3s;
+}
+
+.hamburger-menu::before, .hamburger-menu::after {
+    content: '';
+    position: absolute;
+    margin: -0.4em 0 0;
+    transition: width 0.5s ease 0.3s, transform 0.5s ease 0.3s;
+}
+
+.hamburger-menu::after {
+   margin-top: 0.4em; 
+}
+
+.hamburger-menu {
+  position: relative;
+  display: block;
+  margin: 0;
+  margin-top: .9em;
+  margin-right: 0.35em;
+  margin-left: 0.35em;
+  margin-bottom:.8em;
+  transition: width 0.3s ease;
+}
+
+
+.checkbox-trigger:checked {
+  left: 150px;
+}
+
+.checkbox-trigger:checked + .menu-content .hamburger-menu {
+  width: 2em;
+  
+  transition: width 0.5s ease 0.5s;
+}
+
+.checkbox-trigger:checked + .menu-content .hamburger-menu::before {
+  width: 1.2em;
+  transform: rotate(-35deg);
+  margin-top: -0.4em;
+}
+
+.checkbox-trigger:checked + .menu-content .hamburger-menu::after {
+  width: 1.2em;
+  transform: rotate(35deg);
+  margin-top: 0.4em;
+}
+
+.checkbox-trigger:checked + .menu-content ul {
+  width: 150px;
+  height: 300px;
+  transition: width 0.5s ease 0.3s, height 0.3s ease;
+}
+
+
+
+.menu-content {
+  display: flex;
+  color:white;
+  background-color:#002764;
+  float: left;
+  }
+
+
+  .menu-content ul {
+  display: block;
+  padding-left: 0;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin: 0;
+  width: 0px;
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.3s ease 0.5s, width 0.5s ease;
+}
+
+
+.menu-content ul li {
+  list-style: none;
+  padding-top: 1em;
+  padding-left: 1em;
+  cursor: pointer;
+  transition: color 0.5s;
+}
+
+.menu-content ul li:hover {
+  color:lightblue;
+  
+}
+
+ul{
+  position: relative;
+}
+
+#slideOutIcon{
+  border-radius: 10px;
+  width: 100px;
+  position: absolute;
+  left: 30%;
+  top: 5%;
+  
+}
+
+/*End of Hamburger menu----------------------------------------------------*/
+
+.animate__rotateInDownLeft{
+  animation: rotateInDownLeft;
+  animation-duration: 1.5s;
+}
+
+#mainInfra{
+padding:5em 1em 0 1em;
+  
+}
+
+#itInfra{
+  background-color: whitesmoke;
+  border: 6px whitesmoke ridge;
+  margin: 2em 0 0 0;
+  padding: .5em;
+  opacity: .7;
+}
+
+.h1Infra{
+font-size: 10vw;
+}
+
+.ptagInfra{
+  padding: .5em 0 .5em 0;
+  font-size: 5vw;
+  line-height: 1.2;
+}
+
+.btnInfra{
+  border: none;
+  border-radius: 20px 20px;
+  padding: .5em;
+  background-color: #0071AC;
+  color: whitesmoke;
+  font-size: 4vw;
+}
+
+.btnInfra:hover{
+  background-color:rgb(21, 17, 17);
+  margin-left: .5em;
+
+}
+
+.imgJoeInfra{
+  display: none;
+
+}
+
+#projectHardwareVoIPCloudMain{
+  margin: 2em 0 0 0;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
+  width: 100%;
+  font-family: serif;
+  text-align: start;
+  font-family: serif;
+  grid-template-areas: 
+  'p p p p p p p p p p p p'
+  'h h h h h h h h h h h h'
+  't t t t t t t t t t t t'
+  'c c c c c c c c c c c c'
+}
+#imgProject{
+grid-area: ip;
+width: 95%;
+margin-left: auto;
+margin-right: auto;
+display: block;
+
+}
+
+
+#project{
+  grid-area: p;
+  margin-bottom: 1em;
+ 
+}
+
+#h1PtagProject, #h1PtagHardware, #h1PtagTele, #h1PtagCloud{
+ background-color: #DCEAF5;
+ margin: .5em 0 0 0;
+ padding: 1em;
+ width: 95%;
+ margin-left: auto;
+ margin-right: auto;
+ display: block;
+ border: 6px #DCEAF5 ridge;
+ 
+}
+
+#h1Project, #h1Hardware,#h1Tele, #h1Cloud {
+  font-size: 8vw;
+  padding: 0 0 .5em 0;
+}
+
+#pTagProject, #pTagHardware, #pTagTele, #pTagCloud{
+  font-size: 5vw;
+  line-height: 1.2;
+}
+
+#btnProject, #btnHardware, #btnTele, #btnCloud{
+  font-size: 5vw;
+  margin: .5em 0 0 0;
+  padding: .3em;
+  border: none;
+  background-color: #0071AC;
+  border-radius: 20px 20px;
+  color: whitesmoke;
+}
+
+#btnProject:hover, #btnHardware:hover, #btnTele:hover,#btnCloud:hover {
+  background-color: #002E6A;
+  margin-left: .5em;
+}
+
+
+#imgHardware{
+  grid-area: ih;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  
+}
+
+
+#hardware{
+  grid-area: h;
+}
+
+#imgTele{
+  grid-area: it;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  
+}
+
+#tele{
+  grid-area: t;
+}
+
+#imgCloud{
+  grid-area: ic;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+#cloud{
+  grid-area: c;
+}
+
+#mainFrostedGlass{
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(-60deg, black, #002E6A, #0071AC,#002764);
+	background-size: 400% 400%;
+  background-position: center;
+  background-repeat: no-repeat;
+	animation: gradient 5s ease infinite;
+  padding: 1em;
+  color: whitesmoke;
+	
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+  
+}
+
+#frostedGlassCard{
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, .15);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 1px 12px rgb(0, 0, 0, 0.25);
+  padding: .5em;
+
+}
+
+  #h1Frost{
+    font-size: 8vw;
+    padding-bottom: 1em;
+    text-align: center;
+  }
+
+  #pTagFrost{
+    font-size:5vw;
+    line-height: 1.2;
+    text-align: start;
+  
+  }
+
+
+  #betweenFrostImg, #betweenFrostImg2{
+  width: 80%;
+  margin: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border-radius: 10px;
+  }
+
+
+  /*border-radius: 8px;
+  backdrop-filter: blur(5px);
+  background-color: rgb(255, 255, 255, 0.15);
+  box-shadow: 0 1px 12px rgb(0, 0, 0, 0.25);
+  border: 1px solid rgb(255, 255, 255, 0.3);*/
+
+  
+#mainFrostedGlass2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(-60deg,#BF8015, #002764,#BF8015), whitesmoke;
+	background-size: 400% 400%;
+  background-position: center;
+  background-repeat: no-repeat;
+	animation: gradient 5s ease infinite;
+  padding: 1em;
+  color: whitesmoke;
+	
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+  
+}
+
+#frostedGlassCard2{
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, .15);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 1px 12px rgb(0, 0, 0, 0.25);
+  padding: .5em;
+
+}
+
+  #h1Frost2{
+    font-size: 8vw;
+    padding-bottom: 1em;
+    text-align: center;
+  }
+
+  #pTagFrost2{
+    font-size:5vw;
+    line-height: 1.2;
+    text-align: start;
+  
+  }
+
+  /* Form page---------------------------------------------------------*/
+
+#formMain{
+  position: relative;
+  text-align: center;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  background-image: linear-gradient(#C0821D, #0071AD,#044E7B,#C0821D);
+  border: 4px ridge white ;
+  color: whitesmoke;
+  margin-top: 1em;
+
+}
+
+#h2Form{
+  font-size: 5vw;
+  padding: .5em;
+
+}
+
+#pTagForm{
+  font-size: 3vw;
+  padding: .5em;
+}
+
+#mainFormPage{
+  grid-area: mfp;
+  width: 80%;
+  text-align: start;
+  margin-left: auto;
+  margin-right: auto;
+  color: whitesmoke;
+}
+
+
+
+
+input{
+  display: flex;
+  width: 90%;
+  padding: .5em;
+  margin: .3em;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  }
+
+input:focus, textarea:focus{
+  background-color:lightblue;
+}
+
+input:hover, textarea:hover{
+  border: 4px solid #0071AC;
+}
+
+#formInputs2{
+padding: 0 0 0 .4em;
+
+}
+
+textarea{
+ border-radius: 5px;
+ border: none;
+ cursor: pointer;
+ width: 94%;
+}
+
+
+/*Footer---------------------------------------------------------*/
+
+footer{
+  margin-top: 1em;
+  background-image: linear-gradient(-45deg,#002764,#0071AD,#002764);
+  color: whitesmoke;
+  border:4px white ridge;
+  
+  }
+#topFooter{
+  background-color:#C0821D;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: .5em;
+  padding: .5em;
+}
+
+.fa-facebook, .fa-twitter, .fa-linkedin{
+  font-size: 5vw;
+}
+
+
+
+.fa-facebook:hover, .fa-twitter:hover, .fa-linkedin:hover{
+  color: #002764;
+}
+
+#footerImg{
+  border-radius: 50%;
+  margin-right: auto;
+  width: 12vw;
+}
+
+#mainPtagAzNv{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+
+#pTagFootMain{
+  padding: .5em;
+  font-size:4vw;
+  line-height: 1.2em;
+  text-align: start;
+}
+
+
+
+#listPages{
+ font-size: 4vw;
+ display: flex;
+ flex-direction: column;
+ line-height: 1.2em;
+ padding: 0 0 0 .5em;
+}
+
+
+#h3Pages, #h3Az, #h3Nv{
+  font-size: 6vw;
+  padding: .5em 0 .5em 0;
+}
+
+#arizona {
+  margin: .5em 0 .3em .7em;
+  padding: .5em;
+  width: 90%;
+  font-size:4vw;
+  line-height: 1.2em;
+  text-align: start;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.5),
+  inset 5px 5px 8px rgba(0,0,0,0.5);
+}
+
+#nevada{
+  margin: .3em 0 .3em .7em;
+  padding: .5em;
+  width: 90%;
+  font-size:4vw;
+  line-height: 1.2em;
+  text-align: start;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.5),
+  inset 5px 5px 8px rgba(0,0,0,0.5);
+}
+
+#contactUsBtn{
+text-align: center;
+margin: .3em 0 .3em 0;
+}
+
+#btnContact{
+  cursor: pointer;
+  border: none;
+  font-size: 4vw;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.5),
+            10px 10px 15px rgba(0,0,0,0.5),
+            -1px -1px 30px rgba(0,0,0,0.2);
+}
+
+#btnContact:hover{
+  background-color:#0071AC;
+  color: white;
+}
+
+
+
+
+#copyRight{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2em;
+  padding: .2em;
+  font-size: 3vw;
+}
+
+
+
+
+
+
+
+/*Animation--------------------------------------------------------------*/
+
+.spin { 
+  opacity: 0; 
+  transition-property: transform, opacity; 
+  transition-duration: 1.2s; 
+  transition-timing-function: ease-in; 
+  transform: rotate(360deg);
+
+ } 
+
+.fade-left { 
+  transform: translateX(-40px); 
+  opacity: 0; 
+  transition-property: transform, opacity; 
+  transition-duration: .5s; 
+  transition-timing-function: ease-in; 
+  /*transform: rotate(360deg);*/
+
+ } 
+
+ .fade-right { 
+  transform: translateX(40px); 
+  opacity: 0; 
+  transition-property: transform, opacity; 
+  transition-duration: .5s; 
+  transition-timing-function: ease-in; 
+  /*transform: rotate(360deg);*/
+
+ }
+
+  .fade-bottom { 
+  transform: translateY(60px); 
+  opacity: 0; 
+  transition-property: transform, opacity; 
+  transition-duration: .7s; 
+  transition-timing-function:ease-in; 
+  /*transform: rotate(360deg);*/
+
+ } 
+
+ 
+  .fade-in{ 
+  opacity: 0; 
+  transition-property: transform, opacity; 
+  transition-duration: 1s; 
+  transition-timing-function:ease-in; 
+
+  }
+
+
+ /*Shows text with JS intersection Observer*/ 
+.in-view{ 
+  transform:none; 
+  opacity: 1; 
+} 
+
+/*End of animation-----------------------------------------------------------------*/
+
+
+
+
+/*---------------------------------------------Media queries---------------------------------*/
+
+
+@media screen and (min-width: 768px){
+ 
+#headHorizontalBar{
+  position:fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 15vh;
+  background-color: white;
+  display: block;
+  display: flex;
+
+  
+}
+
+
+ #horizontalIcon{
+  width: 15vw;
+  margin-right: auto;
+  border-radius:10px ;
+  
+  
+
+  
+}
+
+#ulHorizontalBar{
+  color: #0071AC;
+  font-weight: 600;
+  font-size: 1.7vw;
+  cursor: pointer;
+
+}
+
+.list{
+  color: #0071AC;
+  margin: .5em;
+  font-weight: 600;
+  font-size: 1.7vw;
+  display: inline;
+  cursor: pointer;
+  
+}
+
+
+  @keyframes colorChange{
+     0% {color: white; }
+     10% {color: #308BBB;}
+     20% {color:#002E6A;}
+     30% {color: #C0821D;}
+     40% {color:white;}
+     50% {color: #308BBB;}
+     60% {color:#002E6A;}
+     70% {color: #C0821D;}
+     80% {color:white;}
+     90% {color: #308BBB;}
+     100% {color:#002E6A;}
+  }
+
+#contactKeyFrames, #contactKeyFrames2{
+  animation-name: colorChange;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+.list:hover{
+  background-color:#002764;
+  color: white;
+  padding: 1.3em 1.3em 1.3em 1.3em;
+  transition: .7s;
+}
+
+
+  
+header{
+  display: none;
+}
+
+#icon365{
+  width: 15vh;
+}
+
+#mainInfra{
+  margin: 5em 0 3em 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: stretch;
+  gap: 1em;
+
+}
+
+#itInfra{
+  width: 80%;
+  padding: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  border: 6px whitesmoke ridge;
+}
+
+
+.h1Infra{
+font-size: 5vw;
+}
+
+.ptagInfra{
+  padding: .5em 0 .5em 0;
+  font-size: 2vw;
+  line-height: 1.2;
+}
+
+.btnInfra{
+  border: none;
+  border-radius: 20px 20px;
+  padding: .5em;
+  background-color: #002E6A;
+  color: whitesmoke;
+  font-size: 1.5vw;
+}
+
+.btnInfra:hover{
+  background-color:rgb(21, 17, 17);
+  margin-left: .5em;
+
+}
+
+.imgJoeInfra{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  opacity: .8;
+  border: 6px #B1C5DA ridge ;
+}
+
+
+#projectHardwareVoIPCloudMain{
+  margin: 2em 0 0 0;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
+  width: 100%;
+  padding: .5em;
+  font-family: serif;
+  text-align: start;
+  font-family: serif;
+  grid-template-areas: 
+  'p p p p p p h h h h h h'
+  't t t t t t c c c c c c'
+}
+#imgProject{
+grid-area: ip;
+width: 100%;
+}
+
+
+#project{
+  grid-area: p;
+}
+
+
+#imgHardware{
+  grid-area: ih;
+  width: 100%;
+
+  
+
+}
+
+
+#hardware{
+  grid-area: h;
+}
+
+#imgTele{
+  grid-area: it;
+  width: 100%;
+
+}
+
+#tele{
+  grid-area: t;
+}
+
+#imgCloud{
+  grid-area: ic;
+  width: 100%;
+
+}
+
+#cloud{
+  grid-area: c;
+}
+
+
+#h1PtagProject, #h1PtagHardware, #h1PtagTele, #h1PtagCloud{
+ background-color: #DCEAF5;
+ margin: .5em 0 0 0;
+ padding: 1em;
+ width: 95%;
+ margin-left: auto;
+ margin-right: auto;
+ display: block;
+ border: 6px #DCEAF5 ridge;
+ 
+}
+
+#h1Project, #h1Hardware,#h1Tele, #h1Cloud {
+  font-size: 4vw;
+  padding: 0 0 .5em 0;
+}
+
+#pTagProject, #pTagHardware, #pTagTele, #pTagCloud{
+  font-size: 2vw;
+  line-height: 1.2;
+}
+
+#btnProject, #btnHardware, #btnTele, #btnCloud{
+  font-size: 2vw;
+  margin: .5em 0 0 0;
+  padding: .3em;
+  border: none;
+  background-color: #0071AC;
+  border-radius: 20px 20px;
+  color: whitesmoke;
+}
+
+#btnProject:hover, #btnHardware:hover, #btnTele:hover,#btnCloud:hover {
+  background-color: #002E6A;
+  margin-left: .5em;
+}
+
+#mainFrostedGlass{
+  margin-top: 1em;
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(-60deg, black, #002E6A, #0071AC, #002764);
+	background-size: 400% 400%;
+  background-position: center;
+  background-repeat: no-repeat;
+	animation: gradient 5s ease infinite;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  color: whitesmoke;
+  padding: 1em;
+	
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+  
+}
+
+  #h1Frost{
+    font-size: 4vw;
+    text-align: center;
+    padding: .5em;
+  }
+
+  #pTagFrost{
+    font-size:2vw;
+    line-height: 1.3;
+    text-align: start;
+    padding: 1em;
+  
+  
+  }
+
+  
+  #betweenFrostImg, #betweenFrostImg2{
+  width:95%;
+  border-radius: 10px;
+  
+  
+  }
+    
+
+  
+#mainFrostedGlass2{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(-60deg, rgba(245, 245, 245, 0.552), #BF8015, #002764,#BF8015);
+	background-size: 400% 400%;
+  background-position: center;
+  background-repeat: no-repeat;
+	animation: gradient 5s ease infinite;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  color: whitesmoke;
+  margin-top: 1em;
+  padding: 1em;
+	
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+  
+}
+
+  #h1Frost2{
+    font-size: 4vw;
+    text-align: center;
+    padding: .5em;
+  }
+
+  #pTagFrost2{
+    font-size:2vw;
+    line-height: 1.3;
+    text-align: start;
+    padding: 1em;
+  
+  
+  }
+
+
+  
+#formMain{
+  grid-area: fm;
+  position: relative;
+  text-align: center;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #0071AD;
+  border: 4px ridge white ;
+  color: whitesmoke;
+
+}
+
+#h2Form{
+  font-size: 4vw;
+  padding: .5em;
+
+}
+
+#pTagForm{
+  font-size: 2vw;
+  padding: .5em;
+}
+
+
+#mainFormPage{
+  grid-area: mfp;
+  text-align: start;
+  color: whitesmoke;
+  
+}
+
+#formInputsMain{
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+  align-items: center;
+  padding: .5em;
+}
+
+.fa-user, .fa-envelope, .fa-phone, .fa-user-plus{
+  font-size: 1.3vw;
+}
+
+input{
+  padding: .5em;
+  font-size: 1.5vw;
+  margin: .5em;
+}
+
+textarea{
+  font-size: 1.5vw;
+}
+
+footer{
+  background-image: linear-gradient(-45deg,#002764,#0071AD,#002764);
+  color: whitesmoke;
+  border:4px white ridge;
+  
+  }
+
+#topFooter{
+  background-color:#C0821D;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: .5em;
+  padding: .5em;
+}
+
+#footerImg{
+  width: 7vw;
+  border-radius: 50%;
+  margin-right: auto;
+}
+
+.fa-facebook, .fa-twitter, .fa-linkedin{
+  font-size: 2vw;
+}
+
+
+#mainPtagAzNv{
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: center;
+  padding: .5em;
+}
+
+#pTagFootMain{
+  padding: .5em;
+  font-size:2vw;
+  line-height: 1.4em;
+  text-align: start;
+}
+
+#listPages{
+ font-size: 2vw;
+ display: flex;
+ flex-direction: column;
+ line-height: 1.2em;
+ padding: 0 0 0 .5em;
+}
+
+#h3Pages, #h3Az, #h3Nv{
+  font-size: 3vw;
+  padding: .5em 0 .5em 0;
+}
+
+#arizona {
+  margin: 1.5em 0 .3em 0;
+  padding: .5em;
+  font-size:1.7vw;
+  line-height: 1.2em;
+  text-align: start;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.5),
+  inset 5px 5px 8px rgba(0,0,0,0.5);
+}
+
+#nevada{
+  margin: 2em 0 .7em 0;
+  padding: .5em;
+  font-size:1.7vw;
+  line-height: 1.2em;
+  text-align: start;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.5),
+  inset 5px 5px 8px rgba(0,0,0,0.5);
+}
+
+#contactUsBtn{
+text-align: center;
+padding:2em 1.3em 0 0;
+
+}
+
+#btnContact{
+  cursor: pointer;
+  border: none;
+  font-size: 2vw;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.5),
+            10px 10px 15px rgba(0,0,0,0.5),
+            -1px -1px 30px rgba(0,0,0,0.2);
+}
+
+#btnContact:hover{
+  background-color:#0071AC;
+  color: white;
+}
+
+#copyRight{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2em;
+  padding: .2em;
+  font-size: 1.2vw;
+}
+
+
+
+
+
+
+
+}
