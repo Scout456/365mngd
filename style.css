@@ -1207,6 +1207,7 @@ header{
 #serverPic{
   filter: brightness(70%);
   width: 100%;
+  height: 90vh;
 }
 
 
@@ -1214,23 +1215,23 @@ header{
 
 #serverText{
   position: absolute;
-  top: 15vw;
+  top: 9vw;
   left: 4vw;
-  font-size: 4vw;
+  font-size: 3vw;
   padding: .5em;
   
 }
 
 #inline365Managed{
   border-bottom:2px solid white;
-  font-size: 5vw;
+  font-size: 4vw;
   }
 
 
 
 #serverPtag{
   position: absolute;
-  top: 32vw;
+  top: 20vw;
   font-size: 3vw;
   line-height: 1.4em;
   text-align: start;
@@ -1239,7 +1240,7 @@ header{
 }
 
 #serverBtn{
-  margin-top: 40px;
+  
   color:white;
   font-size: 2vw;
   background-color: transparent;
