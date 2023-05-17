@@ -180,8 +180,8 @@ header{
   margin-left: .5em;
 }
 
-.animate_rotateIn{
-  animation: rotateIn;
+.animate_backInDown{
+  animation: backInDown;
   animation-duration: 1.5s;
 }
 
@@ -717,12 +717,19 @@ footer{
   }
 #topFooter{
   background-color:#C0821D;
-  display: flex;
-  justify-content: end;
-  align-items: center;
-  gap: .5em;
-  padding: .5em;
+
 }
+
+#topFooterNav{
+  float: right;
+  
+}
+
+.navFoot{
+  display: inline-block;
+  padding: 0 .5em 0 0;
+}
+
 
 .fa-facebook, .fa-twitter, .fa-linkedin{
   font-size: 5vw;
