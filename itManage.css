@@ -278,8 +278,8 @@ ul{
 
 /*End of Hamburger menu----------------------------------------------------*/
 
-.animate__backInLeft{
-  animation:backInLeft;
+.animate__backInRight{
+  animation:backInRight;
   animation-duration: 1.5s;
 }
 
