@@ -168,7 +168,7 @@ header{
 #serverBtn{
   margin-top: 10px;
   color: #FFFFF0;
-  font-size: 3vw;
+  font-size: 4vw;
   background-color: transparent;
   border: 2px solid #FFFFF0;
   border-radius: 20px;
@@ -218,7 +218,7 @@ header{
 
 #infraBtn{
   color:#FFFFF0;
-  font-size: 3vw;
+  font-size: 4vw;
   background-color: transparent;
   border: 2px solid #FFFFF0;
   border-radius: 20px;
@@ -266,7 +266,7 @@ header{
 
 #optimBtn{
   color: #FFFFF0;
-  font-size: 3vw;
+  font-size: 4vw;
   background-color: transparent;
   border: 2px solid #FFFFF0;
   border-radius: 20px;
@@ -310,7 +310,7 @@ header{
 
  #itBtn{
   color:#FFFFF0;
-  font-size: 3vw;
+  font-size: 4vw;
   background-color: transparent;
   border: 2px solid #FFFFF0;
   border-radius: 20px;
@@ -545,7 +545,7 @@ padding: .3em;
   border: none;
   border-radius: 15px 15px;
   border:1px solid #0071AD;
-  font-size: 3vw;
+  font-size: 4vw;
   cursor: pointer;
   
 }
@@ -596,7 +596,7 @@ padding: .3em;
   margin-top: .5em;
   border-radius: 15px 15px;
   border:1px solid #0071AD;
-  font-size: 3vw;
+  font-size: 4vw;
   cursor: pointer;
 }
 
@@ -638,7 +638,7 @@ padding: .3em;
   border: none;
   border-radius: 15px 15px;
   border:1px solid #0071AD;
-  font-size: 3vw;
+  font-size: 4vw;
   cursor: pointer;
 }
 
