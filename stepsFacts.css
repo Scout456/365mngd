@@ -63,12 +63,9 @@ a{
 
 /*-----------------------End of CSS reset----------------------------------------------*/
 body {
-  height: 100vh;
-  background: linear-gradient(141deg, #0070AC 0%, #084fc1 51%, #C0821D 75%);
-  background-position: center;
-  background-attachment: fixed;
+  transition: 1s ease;
   font-family: Arial, Helvetica, sans-serif;
-}
+        }
 
 header{
   position:fixed;
@@ -264,10 +261,123 @@ ul{
 
 /*End of Hamburger menu----------------------------------------------------*/
 
-#ladyPhonePic, #zoomCallPic{
+
+
+
+
+/*Animation--------------------------------------------------------------*/
+
+.spin { 
+  opacity: 0; 
+  transition-property: transform, opacity; 
+  transition-duration: 1.2s; 
+  transition-timing-function: ease-in; 
+  transform: rotate(360deg);
+
+ } 
+
+.fade-left { 
+  transform: translate3d(2rem, 2rem, 0);
+  opacity: 0; 
+  transition: all; 
+  transition-duration: .5s; 
+  transition-timing-function: ease-in; 
+  /*transform: rotate(360deg);*/
+
+ } 
+
+ .fade-right { 
+  transform: translate3d(-2rem, 0, 0);
+  opacity: 0; 
+  transition:all; 
+  transition-duration: .5s; 
+  transition-timing-function: ease-in; 
+  /*transform: rotate(360deg);*/
+
+ }
+
+  .fade-bottom { 
+  transform: translateY(60px); 
+  opacity: 0; 
+  transition:all; 
+  transition-duration: .5s; 
+  transition-timing-function:ease-in; 
+  /*transform: rotate(360deg);*/
+
+ } 
+
+ 
+  .fade-in{ 
+  opacity: 0; 
+  transition-property: transform, opacity; 
+  transition-duration: 1s; 
+  transition-timing-function:ease-in; 
+  
+  }
+  /*Air Superiority Blue*/
+  .fade-blue{
+    background-color: #72A0C1;
+    opacity: 0; 
+    transition-property: transform, opacity; 
+    transition-duration: 1s; 
+    transition-timing-function:ease-in; 
+  }
+/*Bayern Blue*/
+    .fade-BayernBlue{
+    background-color:#0066b2;
+    opacity: 0; 
+    transition-property: transform, opacity; 
+    transition-duration: 1s; 
+    transition-timing-function:ease-in; 
+  }
+
+    .fade-BlueDeFrance{
+    border-top: 5px ridge whitesmoke;
+    background-color:#318CE7;
+    opacity: 0; 
+    transition-property: transform, opacity; 
+    transition-duration: 1s; 
+    transition-timing-function:ease-in; 
+  }
+
+    .fade-MagicBlue{
+    border-top: 4px ridge whitesmoke;  
+    background-color:#0077c0;
+    opacity: 0; 
+    transition-property: transform, opacity; 
+    transition-duration: 1s; 
+    transition-timing-function:ease-in; 
+  }
+
+    .fade-orange{
+    background-color:#C18121;
+    opacity: 0; 
+    transition-property: transform, opacity; 
+    transition-duration: 1s; 
+    transition-timing-function:ease-in; 
+  }
+
+
+
+
+ /*Shows text with JS intersection Observer*/ 
+.in-view{ 
+  transform: translate3d(0, 0, 0);
+  /*transform:none; */
+  opacity: 1; 
+  
+  
+  
+} 
+
+/*End of animation-----------------------------------------------------------------*/
+
+
+
+#ladyPhonePic, #zoomCallPic, #zoomCallPic3{
   width: 100%;
-  border-radius: 10px;
-  margin: 2em 0 0 0;
+  
+  
 }
 
 #container{
@@ -275,7 +385,7 @@ ul{
   flex-direction: column;
   justify-content: center;
   align-items: start;
-  padding: 1em;
+  
   
 
 }
@@ -287,20 +397,30 @@ ul{
   -webkit-text-stroke-color: black;
   margin-top: 1em;
   line-height: 1.2;
+  padding: 0 .5em 0 .5em;
   
-  
+}
+
+
+
+.h2Phone2{
+ font-size: 6vw;
+ color: #151618;
+ font-weight: bold;
+ padding: 0 .5em 0 .5em;
 }
 
 .pTagPhone{
   font-size: 5vw;
-  margin-top: .5em;
+  margin: .5em 0 .5em 0;
+  padding: 0 .5em 0 .5em;
   color: #151618;
   line-height: 1.2;
 }
 
 .orderedList{
   list-style-type: decimal;
-  padding: .5em;
+  padding: 1.1em;
   color: #151618;
   line-height: 1.1;
   font-size: 5vw;
@@ -309,7 +429,7 @@ ul{
 
 .unorderedList2{
   list-style-type: disc;
-  padding: .5em;
+  padding: 1em;
   color: #151618;
   line-height: 1.1;
   font-size: 5vw;
@@ -318,6 +438,136 @@ ul{
 .boldText{
   font-weight: bold;
 }
+
+
+/*Footer---------------------------------------------------------*/
+
+footer{
+  
+  background-image: linear-gradient(-45deg,#002764,#0071AD,#002764);
+  color: whitesmoke;
+  border:4px white ridge;
+  
+  }
+#topFooter{
+  background-color:#C0821D;
+  
+}
+
+
+#topFooterNav{
+  float: right;
+  
+}
+
+.navFoot{
+  display: inline-block;
+  padding: 0 .5em 0 0;
+}
+
+.fa-facebook, .fa-twitter, .fa-linkedin{
+  font-size: 5vw;
+}
+
+
+
+.fa-facebook:hover, .fa-twitter:hover, .fa-linkedin:hover{
+  color: #002764;
+}
+
+#footerImg{
+  border-radius: 50%;
+  margin-right: auto;
+  width: 12vw;
+}
+
+#mainPtagAzNv{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+
+#pTagFootMain{
+  padding: .5em;
+  font-size:4vw;
+  line-height: 1.2em;
+  text-align: start;
+}
+
+
+
+#listPages{
+ font-size: 4vw;
+ display: flex;
+ flex-direction: column;
+ line-height: 1.2em;
+ padding: 0 0 0 .5em;
+}
+
+
+#h3Pages, #h3Az, #h3Nv{
+  font-size: 6vw;
+  padding: .5em 0 .5em 0;
+}
+
+#arizona {
+  margin: .5em 0 .3em .7em;
+  padding: .5em;
+  width: 90%;
+  font-size:4vw;
+  line-height: 1.2em;
+  text-align: start;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.5),
+  inset 5px 5px 8px rgba(0,0,0,0.5);
+}
+
+#nevada{
+  margin: .3em 0 .3em .7em;
+  padding: .5em;
+  width: 90%;
+  font-size:4vw;
+  line-height: 1.2em;
+  text-align: start;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.5),
+  inset 5px 5px 8px rgba(0,0,0,0.5);
+}
+
+#contactUsBtn{
+text-align: center;
+margin: .3em 0 .3em 0;
+}
+
+#btnContact{
+  cursor: pointer;
+  border: none;
+  font-size: 4vw;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.5),
+            10px 10px 15px rgba(0,0,0,0.5),
+            -1px -1px 30px rgba(0,0,0,0.2);
+}
+
+#btnContact:hover{
+  background-color:#0071AC;
+  color: white;
+}
+
+
+
+
+#copyRight{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2em;
+  padding: .2em;
+  font-size: 3vw;
+}
+
+
+
 
 
 
@@ -405,5 +655,184 @@ header{
 
 #icon365{
   width: 15vh;
+}
+
+
+
+
+#container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  
+}
+
+
+#ladyPhonePic, #zoomCallPic, #zoomCallPic3{
+  width: 100%;
+  
+  
+}
+
+#container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  
+  
+
+}
+
+.h1Phone{
+  color: transparent;
+  font-size: 4vw;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: black;
+  margin-top: 1em;
+  line-height: 1.2;
+  padding: 0 .5em .5em .5em;
+  
+}
+
+
+
+.h2Phone2{
+ font-size: 3vw;
+ color: #151618;
+ font-weight: bold;
+ padding: 0 .5em .0 .5em;
+}
+
+.pTagPhone{
+  font-size: 2vw;
+  padding: 0 .5em .5em .5em;
+  color: #151618;
+  line-height: 1.2;
+}
+
+.orderedList{
+  list-style-type: decimal;
+  padding: 1.2em;
+  color: #151618;
+  line-height: 1.1;
+  font-size: 2vw;
+
+}
+
+.unorderedList2{
+  list-style-type: disc;
+  padding: 1em;
+  color: #151618;
+  line-height: 1.2;
+  font-size: 2vw;
+}
+
+
+footer{
+  background-image: linear-gradient(-45deg,#002764,#0071AD,#002764);
+  color: whitesmoke;
+  border:4px white ridge;
+  
+  }
+
+#topFooter{
+  background-color:#C0821D;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: .5em;
+  padding: .5em;
+}
+
+#footerImg{
+  width: 7vw;
+  border-radius: 50%;
+  margin-right: auto;
+}
+
+.fa-facebook, .fa-twitter, .fa-linkedin{
+  font-size: 2vw;
+}
+
+
+#mainPtagAzNv{
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: center;
+  padding: .5em;
+}
+
+#pTagFootMain{
+  padding: .5em;
+  font-size:2vw;
+  line-height: 1.4em;
+  text-align: start;
+}
+
+#listPages{
+ font-size: 2vw;
+ display: flex;
+ flex-direction: column;
+ line-height: 1.2em;
+ padding: 0 0 0 .5em;
+}
+
+#h3Pages, #h3Az, #h3Nv{
+  font-size: 3vw;
+  padding: .5em 0 .5em 0;
+}
+
+#arizona {
+  margin: 1.5em 0 .3em 0;
+  padding: .5em;
+  font-size:1.7vw;
+  line-height: 1.2em;
+  text-align: start;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.5),
+  inset 5px 5px 8px rgba(0,0,0,0.5);
+}
+
+#nevada{
+  margin: 2em 0 .7em 0;
+  padding: .5em;
+  font-size:1.7vw;
+  line-height: 1.2em;
+  text-align: start;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.5),
+  inset 5px 5px 8px rgba(0,0,0,0.5);
+}
+
+#contactUsBtn{
+text-align: center;
+padding:2em 1.3em 0 0;
+
+}
+
+#btnContact{
+  cursor: pointer;
+  border: none;
+  font-size: 2vw;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.5),
+            10px 10px 15px rgba(0,0,0,0.5),
+            -1px -1px 30px rgba(0,0,0,0.2);
+}
+
+#btnContact:hover{
+  background-color:#0071AC;
+  color: white;
+}
+
+#copyRight{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2em;
+  padding: .2em;
+  font-size: 1.2vw;
 }
 }
