@@ -707,14 +707,14 @@ header{
 
 .pTagPhone{
   font-size: 2vw;
-  padding: 0 .5em .5em .5em;
+  padding: 0 1.5em 0 1.5em;
   color: #151618;
   line-height: 1.2;
 }
 
 .orderedList{
   list-style-type: decimal;
-  padding: 1.2em;
+  padding: .5em 1.5em .5em 1.5em;
   color: #151618;
   line-height: 1.1;
   font-size: 2vw;
@@ -723,7 +723,7 @@ header{
 
 .unorderedList2{
   list-style-type: disc;
-  padding: 1em;
+  padding: .5em 1.5em .5em 1.5em;
   color: #151618;
   line-height: 1.2;
   font-size: 2vw;
