@@ -572,12 +572,13 @@ padding: .3em;
 #googleWorkspacePic{
   filter: brightness(150%);
   filter: contrast(30%);
+  
 }
 
  #h2googleWorkspace{
   position: absolute;
   top: 0;
-  padding: .5em .5em 1em .5em;
+  padding: .5em;
   font-size: 5vw;
   font-weight: 600;
 
@@ -585,8 +586,8 @@ padding: .3em;
 
  #pTaggoogleWorkspace{
   position: absolute;
-  top: 6em;
-  padding:.5em 0 1em .5em;
+  top: 4em;
+  padding: .5em;
   font-size: 3.5vw;
   line-height: 1.3em;
   font-weight: 600;
