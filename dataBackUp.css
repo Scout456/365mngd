@@ -374,7 +374,7 @@ ul{
 
 
 
-#ladyPhonePic, #zoomCallPic, #zoomCallPic3{
+#ladyPhonePic, #zoomCallPic, #dataPic{
   width: 100%;
   
   
@@ -386,7 +386,27 @@ ul{
   justify-content: center;
   align-items: start;
   
+}
+
+#ladyPhonePic{
+  margin-top: 2em;
+  position: relative;
   
+}
+
+#h2DataBackup{
+  color:#212427;
+  position: absolute;
+  top: 5em;
+  right: 3.5em;
+  font-size: 8vw;
+  border-bottom: 2px solid #212427;
+  border-top: 2px solid #212421;
+}
+
+.animate_zoomIn{
+  animation: zoomIn;
+  animation-duration: 1s;
 
 }
 
@@ -419,7 +439,7 @@ ul{
 }
 
 .orderedList{
-  list-style-type: decimal;
+  list-style-type: disc;
   padding: 0 1.5em .5em 1.5em;
   color: #151618;
   line-height: 1.1;
