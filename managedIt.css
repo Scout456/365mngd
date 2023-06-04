@@ -673,7 +673,7 @@ header{
 }
 
 
-#ladyPhonePic, #zoomCallPic, #zoomCallPic3{
+#ladyPhonePic, #ladyPhonePic2, #ladyPhonePic3{
   width: 90%;
   margin-left: auto;
   margin-right: auto;
@@ -728,6 +728,120 @@ header{
   line-height: 1.2;
   font-size: 2vw;
 }
+
+
+
+/*Animation--------------------------------------------------------------*/
+
+.spin { 
+  opacity: 0; 
+  transition-property: transform, opacity; 
+  transition-duration: 1.2s; 
+  transition-timing-function: ease-in; 
+  transform: rotate(360deg);
+
+ } 
+
+.fade-left { 
+  transform: translate3d(2rem, 2rem, 0);
+  opacity: 0; 
+  transition: all; 
+  transition-duration: .5s; 
+  transition-timing-function: ease-in; 
+  /*transform: rotate(360deg);*/
+
+ } 
+
+ .fade-right { 
+  transform: translate3d(-2rem, 0, 0);
+  opacity: 0; 
+  transition:all; 
+  transition-duration: .5s; 
+  transition-timing-function: ease-in; 
+  /*transform: rotate(360deg);*/
+
+ }
+
+  .fade-bottom { 
+  transform: translateY(60px); 
+  opacity: 0; 
+  transition:all; 
+  transition-duration: .5s; 
+  transition-timing-function:ease-in; 
+  /*transform: rotate(360deg);*/
+
+ } 
+
+ 
+  .fade-in{ 
+  opacity: 0; 
+  transition-property: transform, opacity; 
+  transition-duration: 1s; 
+  transition-timing-function:ease-in; 
+  
+  }
+  /*Air Superiority Blue*/
+  .fade-blue{
+    background-color: #72A0C1;
+    opacity: 0; 
+    transition-property: transform, opacity; 
+    transition-duration: 1s; 
+    transition-timing-function:ease-in; 
+  
+  
+  }
+/*Bayern Blue*/
+    .fade-BayernBlue{
+    background-color:#0066b2;
+    opacity: 0; 
+    transition-property: transform, opacity; 
+    transition-duration: 1s; 
+    transition-timing-function:ease-in; 
+  }
+
+    .fade-BlueDeFrance{
+    border-top: 5px ridge whitesmoke;
+    background-color:#318CE7;
+    opacity: 0; 
+    transition-property: transform, opacity; 
+    transition-duration: 1s; 
+    transition-timing-function:ease-in; 
+  }
+
+    .fade-MagicBlue{
+    border-top: 4px ridge whitesmoke;  
+    background-color:#0077c0;
+    opacity: 0; 
+    transition-property: transform, opacity; 
+    transition-duration: 1s; 
+    transition-timing-function:ease-in; 
+  }
+
+    .fade-orange{
+    background-color:#C18121;
+    opacity: 0; 
+    transition-property: transform, opacity; 
+    transition-duration: 1s; 
+    transition-timing-function:ease-in; 
+  }
+
+
+
+
+ /*Shows text with JS intersection Observer*/ 
+.in-view{ 
+  transform: translate3d(0, 0, 0);
+  /*transform:none; */
+  opacity: 1; 
+  
+  
+  
+} 
+
+
+
+/*End of animation-----------------------------------------------------------------*/
+
 
 
 footer{
