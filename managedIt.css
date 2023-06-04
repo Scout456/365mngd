@@ -333,7 +333,6 @@ ul{
   }
 
     .fade-BlueDeFrance{
-    border-top: 5px ridge whitesmoke;
     background-color:#318CE7;
     opacity: 0; 
     transition-property: transform, opacity; 
@@ -342,7 +341,6 @@ ul{
   }
 
     .fade-MagicBlue{
-    border-top: 4px ridge whitesmoke;  
     background-color:#0077c0;
     opacity: 0; 
     transition-property: transform, opacity; 
@@ -375,17 +373,18 @@ ul{
 
 
 
-#ladyPhonePic, #zoomCallPic, #zoomCallPic3{
+
+#ladyPhonePic, #ladyPhonePic2, #ladyPhonePic3{
   width: 100%;
-  
-  
-}
+  }
+
 
 #container{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: start;
+  margin-top: 2em;
   
   
 
@@ -419,22 +418,7 @@ ul{
   line-height: 1.2;
 }
 
-.orderedList{
-  list-style-type: decimal;
-  padding: 0 1.5em .5em 1.5em;
-  color: #151618;
-  line-height: 1.1;
-  font-size: 5vw;
 
-}
-
-.unorderedList2{
-  list-style-type: disc;
-  padding: 0 1.5em .5em 1.5em;
-  color: #151618;
-  line-height: 1.1;
-  font-size: 5vw;
-}
 
 .boldText{
   font-weight: bold;
@@ -712,22 +696,6 @@ header{
   line-height: 1.2;
 }
 
-.orderedList{
-  list-style-type: decimal;
-  padding: .5em 6em .5em 6em;
-  color: #151618;
-  line-height: 1.1;
-  font-size: 2vw;
-
-}
-
-.unorderedList2{
-  list-style-type: disc;
-  padding: .5em 6em .5em 6em;
-  color: #151618;
-  line-height: 1.2;
-  font-size: 2vw;
-}
 
 
 
@@ -800,7 +768,6 @@ header{
   }
 
     .fade-BlueDeFrance{
-    border-top: 5px ridge whitesmoke;
     background-color:#318CE7;
     opacity: 0; 
     transition-property: transform, opacity; 
@@ -809,7 +776,6 @@ header{
   }
 
     .fade-MagicBlue{
-    border-top: 4px ridge whitesmoke;  
     background-color:#0077c0;
     opacity: 0; 
     transition-property: transform, opacity; 
