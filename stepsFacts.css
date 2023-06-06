@@ -688,7 +688,7 @@ header{
 .h1Phone{
   color: transparent;
   font-size: 4vw;
-  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: black;
   margin-top: 1em;
   line-height: 1.2;
