@@ -317,6 +317,7 @@ ul{
   }
   /*Air Superiority Blue*/
   .fade-blue{
+    border-bottom: 4px ridge whitesmoke;  
     background-color: #72A0C1;
     opacity: 0; 
     transition-property: transform, opacity; 
@@ -341,6 +342,7 @@ ul{
   }
 
     .fade-MagicBlue{
+    border-bottom: 4px ridge whitesmoke; 
     background-color:#0077c0;
     opacity: 0; 
     transition-property: transform, opacity; 
@@ -672,7 +674,7 @@ header{
 .h1Phone{
   color: transparent;
   font-size: 4vw;
-  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: black;
   margin-top: 1em;
   line-height: 1.2;
