@@ -35,7 +35,7 @@ body {
   line-height: 1;
 }
 
-ol {
+ol, ul {
   list-style: none;
 }
 
@@ -262,9 +262,28 @@ ul{
 /*Start of content in page-----------------------------------------------------*/
 
 .ContentContainer{
-  margin-top: 3em;
   padding: 1em;
+  background: linear-gradient(-60deg, rgb(83, 191, 227),whitesmoke, rgb(81, 199, 239));
+	background-size: 400% 400%;
+  background-position: center;
+  background-repeat: no-repeat;
+	animation: gradient 3s ease infinite;
+
 }
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+  
+}
+
 
 
 
@@ -272,6 +291,7 @@ ul{
   color: #002764;
   font-weight: bold;
   font-size: 7vw;
+  margin-top: 5em;
   padding: 0 0 1em 0;
 }
 
@@ -280,6 +300,10 @@ ul{
   color: #212427;
   line-height: 1.2em;
   padding: 0 0 1em 0;
+}
+
+.listDot{
+  list-style-type: disc;
 }
 
 .btnFirst{
@@ -324,6 +348,168 @@ ul{
   display: block;
   border-radius: 10%;
 }
+
+.locationBox{
+  width: 90%;
+  margin: auto;
+  display: block;
+  border-radius: 20px 20px;
+  background-color:lightblue;
+  padding: 1em;
+  line-height: 1.5;
+  font-size: 3vw;
+  
+ 
+  }
+
+  .h3Contact{
+    padding-bottom: 1em;
+    color: #262626;
+    font-size: 4vw;
+  }
+
+ 
+
+  .fa-solid, .fa-regular   {
+  color: #0071AC;
+  
+  
+  }
+
+  .icon{
+    color: #002E6A;
+    font-family: serif;
+  }
+
+  
+footer{
+  margin-top: 1em;
+  background-image: linear-gradient(#002764,#0071AD,#044E7B,#002764);
+  color: whitesmoke;
+  border:4px white ridge;
+  
+  }
+#topFooter{
+  background-color:#C0821D;
+
+}
+
+
+#topFooterNav{
+  float: right;
+  
+}
+
+.navFoot{
+  display: inline-block;
+  padding: 0 .5em 0 0;
+}
+
+.fa-facebook, .fa-twitter, .fa-linkedin{
+  font-size: 5vw;
+}
+
+
+
+.fa-facebook:hover, .fa-twitter:hover, .fa-linkedin:hover{
+  color: #002764;
+}
+
+#footerImg{
+  border-radius: 50%;
+  margin-right: auto;
+  width: 12vw;
+}
+
+#mainPtagAzNv{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+
+#pTagFootMain{
+  padding: .5em;
+  font-size:4vw;
+  line-height: 1.2em;
+  text-align: start;
+}
+
+
+
+#listPages{
+ font-size: 4vw;
+ display: flex;
+ flex-direction: column;
+ line-height: 1.2em;
+ padding: 0 0 0 .5em;
+ 
+}
+
+
+#h3Pages, #h3Az, #h3Nv{
+  font-size: 6vw;
+  padding: .5em 0 .5em 0;
+}
+
+#arizona {
+  margin: .5em 0 .3em .7em;
+  padding: .5em;
+  width: 90%;
+  font-size:4vw;
+  line-height: 1.2em;
+  text-align: start;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.5),
+  inset 5px 5px 8px rgba(0,0,0,0.5);
+}
+
+#nevada{
+  margin: .3em 0 .3em .7em;
+  padding: .5em;
+  width: 90%;
+  font-size:4vw;
+  line-height: 1.2em;
+  text-align: start;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.5),
+  inset 5px 5px 8px rgba(0,0,0,0.5);
+}
+
+#contactUsBtn{
+text-align: center;
+margin: .3em 0 .3em 0;
+}
+
+#btnContact{
+  cursor: pointer;
+  border: none;
+  font-size: 4vw;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.5),
+            10px 10px 15px rgba(0,0,0,0.5),
+            -1px -1px 30px rgba(0,0,0,0.2);
+}
+
+#btnContact:hover{
+  background-color:#0071AC;
+  color: white;
+}
+
+
+
+
+#copyRight{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2em;
+  padding: .2em;
+  font-size: 3vw;
+}
+
+
+
+
 
 
 
@@ -504,6 +690,117 @@ font-size: 5vw;
   font-size: 2.5vw;
   line-height: 1.2;
 }
+
+
+footer{
+  background-image: linear-gradient(#002764,#0071AD,#044E7B,#002764);
+  color: whitesmoke;
+  border:4px white ridge;
+  
+  }
+
+#topFooter{
+  background-color:#C0821D;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: .5em;
+  padding: .5em;
+}
+
+#footerImg{
+  width: 7vw;
+  border-radius: 50%;
+  margin-right: auto;
+}
+
+.fa-facebook, .fa-twitter, .fa-linkedin{
+  font-size: 2vw;
+}
+
+
+#mainPtagAzNv{
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: center;
+  padding: .5em;
+}
+
+#pTagFootMain{
+  padding: .5em;
+  font-size:2vw;
+  line-height: 1.4em;
+  text-align: start;
+}
+
+#listPages{
+ font-size: 2vw;
+ display: flex;
+ flex-direction: column;
+ line-height: 1.2em;
+ padding: 0 0 0 .5em;
+}
+
+#h3Pages, #h3Az, #h3Nv{
+  font-size: 3vw;
+  padding: .5em 0 .5em 0;
+}
+
+#arizona {
+  margin: 1.5em 0 .3em 0;
+  padding: .5em;
+  font-size:1.7vw;
+  line-height: 1.2em;
+  text-align: start;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.5),
+  inset 5px 5px 8px rgba(0,0,0,0.5);
+}
+
+#nevada{
+  margin: 2em 0 .7em 0;
+  padding: .5em;
+  font-size:1.7vw;
+  line-height: 1.2em;
+  text-align: start;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.5),
+  inset 5px 5px 8px rgba(0,0,0,0.5);
+}
+
+#contactUsBtn{
+text-align: center;
+padding:2em 1.3em 0 0;
+
+}
+
+#btnContact{
+  cursor: pointer;
+  border: none;
+  font-size: 2vw;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.5),
+            10px 10px 15px rgba(0,0,0,0.5),
+            -1px -1px 30px rgba(0,0,0,0.2);
+}
+
+#btnContact:hover{
+  background-color:#0071AC;
+  color: white;
+}
+
+#copyRight{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2em;
+  padding: .2em;
+  font-size: 1.2vw;
+}
+
+
+
+
 
 
 }
