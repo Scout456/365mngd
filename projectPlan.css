@@ -837,14 +837,16 @@ padding:2em 1.3em 0 0;
 
 
 .lastImg{
-  width: 46%;
+  width: 50%;
   border-radius: 10%;
   float: left;
   
 }
 
 .knowMore{
+  clear: both;
   width: 50%;
-  float: right;
+  padding: 0 0 0 1em;
+  
 }
 }
