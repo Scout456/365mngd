@@ -343,7 +343,14 @@ ul{
   margin-bottom: .5em;
 }
 
-.imgTwo{
+.imgThree{
+  width: 90%;
+  margin: auto;
+  display: block;
+  border-radius: 10%;
+}
+
+.lastImg{
   width: 90%;
   margin: auto;
   display: block;
@@ -353,6 +360,7 @@ ul{
 .locationBox{
   width: 90%;
   margin: auto;
+  margin-bottom: 1em;
   display: block;
   border-radius: 20px 20px;
   background-color:lightblue;
@@ -381,6 +389,7 @@ ul{
     color: #002E6A;
     font-family: serif;
   }
+
 
   
 footer{
@@ -650,8 +659,9 @@ font-size: 5vw;
   margin: auto;
   display: block;
   border-radius: 10%;
-  
 }
+
+
 
 
 .h1FirstHeader{
@@ -687,10 +697,12 @@ font-size: 5vw;
 }
 
 .ulList{
-  padding: .5em;
+  padding: 1em;
   font-size: 2.5vw;
   line-height: 1.2;
 }
+
+
 
 
 footer{
@@ -820,5 +832,19 @@ padding:2em 1.3em 0 0;
 .h1PtagFirst{
   width: 50%;
   clear: both;
+}
+
+
+
+.lastImg{
+  width: 46%;
+  border-radius: 10%;
+  float: left;
+  
+}
+
+.knowMore{
+  width: 50%;
+  float: right;
 }
 }
